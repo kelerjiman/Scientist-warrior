@@ -3,6 +3,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class MovementScript : MonoBehaviour
 {
+    
     private Vector2 m_Direction = Vector2.zero;
     public int speed = 5;
     public Rigidbody2D rigidbody2d;
