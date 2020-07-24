@@ -59,7 +59,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0.98
+  orthographic size: 2.51
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -983,11 +983,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4059847041214860}
-  - component: {fileID: 8501323565680485202}
   - component: {fileID: 6014289235368731034}
+  - component: {fileID: 6023406600731574157}
+  - component: {fileID: 8501323565680485202}
+  - component: {fileID: 8429343224906144246}
+  - component: {fileID: 5773940597109399146}
   m_Layer: 0
   m_Name: SpearMan
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1008,20 +1011,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8501323565680485202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466169791162244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc63143b8c897064796dde7c202231f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  rigidbody2d: {fileID: 6014289235368731034}
 --- !u!50 &6014289235368731034
 Rigidbody2D:
   serializedVersion: 4
@@ -1042,7 +1031,76 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!61 &6023406600731574157
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466169791162244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03681469, y: 0.123584986}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.43203163, y: 0.56381845}
+  m_EdgeRadius: 0
+--- !u!114 &8501323565680485202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466169791162244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc63143b8c897064796dde7c202231f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  rigidbody2d: {fileID: 6014289235368731034}
+--- !u!114 &8429343224906144246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466169791162244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f006cd60294e14a53d685b83a3a7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7954524988675883126}
+--- !u!114 &5773940597109399146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466169791162244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564edc6b56867ef4ca1538f671fb6db3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBodyParts:
+  - Name: Refrence
+    m_Sprite: {fileID: 21300004, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
+    PartHodler: {fileID: 5595067636365013983}
 --- !u!1 &1476078635701520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,7 +1597,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6502556756829149715}
   - component: {fileID: 7954524988675883126}
-  - component: {fileID: 1163286551967907974}
   m_Layer: 0
   m_Name: AnimationHolder
   m_TagString: Untagged
@@ -1597,16 +1654,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1163286551967907974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6932248709244102069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7f006cd60294e14a53d685b83a3a7a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 7954524988675883126}
