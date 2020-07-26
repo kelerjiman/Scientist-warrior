@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour,Health
         set
         {
             health = value;
-            if (value<=0)
+            if (health<=0)
             {
                 Instantiate(partical, transform.position, Quaternion.identity);
                 Destroy(gameObject);

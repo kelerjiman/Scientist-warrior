@@ -25,8 +25,6 @@ public class MovementScript : MonoBehaviour
         m_TempPos = transform.position;
         m_TempPos.x += m_Direction.x;
         m_TempPos.y += m_Direction.y;
-
-
         rigidbody2d.MovePosition(rigidbody2d.position + m_Direction * speed * Time.fixedDeltaTime);
     }
 }

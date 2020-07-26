@@ -582,6 +582,7 @@ GameObject:
   - component: {fileID: 8245037026508436573}
   - component: {fileID: 6248289408952546241}
   - component: {fileID: 473580566907652654}
+  - component: {fileID: 6845900138512835631}
   m_Layer: 9
   m_Name: SpearMan
   m_TagString: Player
@@ -707,8 +708,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df94450feea81143ab4b84bc3ed7b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  partical: {fileID: 0}
+  health: 3
+  partical: {fileID: 5306971146490502574, guid: cbb09194d0e0d5544a2a3ddaa2d5dd00,
+    type: 3}
+--- !u!114 &6845900138512835631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473580566907652655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76932f1366d52c64a830a23b612f9d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 474930186898755392}
+  damage: 1
 --- !u!1 &473765346730095357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,8 +1464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474930186898755393}
   - component: {fileID: 474930186898755392}
-  - component: {fileID: 474930186898755455}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: AttackEffectArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1496,20 +1511,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.95, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &474930186898755455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474930186898755394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76932f1366d52c64a830a23b612f9d41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collider: {fileID: 474930186898755392}
-  damage: 1
 --- !u!1 &1338070554618574396
 GameObject:
   m_ObjectHideFlags: 0
