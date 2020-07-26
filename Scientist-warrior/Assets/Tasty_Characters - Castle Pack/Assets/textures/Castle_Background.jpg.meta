@@ -1,7 +1,91 @@
 fileFormatVersion: 2
 guid: 527af9115dcefbf4ebc13e9bc36447a7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -892139155757346477
+    second: Castle_Background_0
+  - first:
+      213: 4655248759718407555
+    second: Castle_Background_1
+  - first:
+      213: 2753801114827700895
+    second: Castle_Background_2
+  - first:
+      213: 8682046450307860737
+    second: Castle_Background_3
+  - first:
+      213: -6627845157018670879
+    second: Castle_Background_4
+  - first:
+      213: 2431380991695873477
+    second: Castle_Background_5
+  - first:
+      213: 3047904266734442012
+    second: Castle_Background_6
+  - first:
+      213: -493489927663902541
+    second: Castle_Background_7
+  - first:
+      213: -7963695521068565070
+    second: Castle_Background_8
+  - first:
+      213: 7451294389317364773
+    second: Castle_Background_9
+  - first:
+      213: 7977433290759002256
+    second: Castle_Background_10
+  - first:
+      213: -4441344605935972060
+    second: Castle_Background_11
+  - first:
+      213: 8424979634779532629
+    second: Castle_Background_12
+  - first:
+      213: -1154501662531026342
+    second: Castle_Background_13
+  - first:
+      213: 1018780116199381263
+    second: Castle_Background_14
+  - first:
+      213: -4098192951565352650
+    second: Castle_Background_15
+  - first:
+      213: 8087249109967122615
+    second: Castle_Background_16
+  - first:
+      213: 3262432728785176447
+    second: Castle_Background_17
+  - first:
+      213: -5450483896305179733
+    second: Castle_Background_18
+  - first:
+      213: -1299403951113081117
+    second: Castle_Background_19
+  - first:
+      213: -2013458183705230386
+    second: Castle_Background_20
+  - first:
+      213: 7103201933394902983
+    second: Castle_Background_21
+  - first:
+      213: -5674535602108461480
+    second: Castle_Background_22
+  - first:
+      213: -7564908049968553176
+    second: Castle_Background_23
+  - first:
+      213: -8551534223728454297
+    second: Castle_Background_24
+  - first:
+      213: -6740131519330349918
+    second: Castle_Background_25
+  - first:
+      213: -6926362721538101218
+    second: Castle_Background_26
+  - first:
+      213: -8372613973666966180
+    second: Castle_Background_27
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +124,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 151
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,10 +154,88 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Castle_Background_8
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 409
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdb657fd154b7190800000000000000
+      internalID: -7963695521068565070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Castle_Background_15
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 258
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63100f4493b4027c0800000000000000
+      internalID: -4098192951565352650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
