@@ -13,6 +13,8 @@ public class EnemyZoneScript : MonoBehaviour
     [Range(-1,1)]
     [SerializeField] private int LookDirection = 1;
 
+    private static readonly int State = Animator.StringToHash("State");
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         playerInSight = true;
@@ -29,12 +31,14 @@ public class EnemyZoneScript : MonoBehaviour
             EnemyVisual.localScale = localTransform;
             EnemyVisual.position = Vector2.Lerp(EnemyVisual.position, other.transform.position,
                 speed * Time.fixedDeltaTime);
+            EnemyVisual.gameObject.GetComponent<Animator>().SetInteger(State,1);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         playerInSight = false;
+        EnemyVisual.gameObject.GetComponent<Animator>().SetInteger(State,0);
     }
 
     private void Start()

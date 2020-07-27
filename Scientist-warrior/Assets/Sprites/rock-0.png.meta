@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 5d5ecf61b559ea14291c70f466b8e2ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 823653785610412969
+    second: rock-0_0
+  - first:
+      213: 6046360541233702401
+    second: rock-0_1
+  - first:
+      213: 3705620817925775061
+    second: rock-0_2
+  - first:
+      213: -8901457609235778145
+    second: rock-0_3
+  - first:
+      213: -309882286480767565
+    second: rock-0_4
+  - first:
+      213: -8004013359081352767
+    second: rock-0_5
+  - first:
+      213: 7838392855477108707
+    second: rock-0_6
+  - first:
+      213: -2797634065177851688
+    second: rock-0_7
+  - first:
+      213: -1107330765263260474
+    second: rock-0_8
+  - first:
+      213: 9041121862276140341
+    second: rock-0_9
+  - first:
+      213: 4776560526924648423
+    second: rock-0_10
+  - first:
+      213: 1779531323347326882
+    second: rock-0_11
+  - first:
+      213: -1605886430046359537
+    second: rock-0_12
+  - first:
+      213: 1263272945135286083
+    second: rock-0_13
+  - first:
+      213: 5774081492146252895
+    second: rock-0_14
+  - first:
+      213: 1380691629674474012
+    second: rock-0_15
+  - first:
+      213: -965114353066326853
+    second: rock-0_16
+  - first:
+      213: -8445620167755055941
+    second: rock-0_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rock-0_0
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 738
+        width: 94
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3e63d01c43e6b00800000000000000
+      internalID: 823653785610412969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_2
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 741
+        width: 85
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de12cc20820d6330800000000000000
+      internalID: 3705620817925775061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_4
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 487
+        width: 187
+        height: 168
+      alignment: 9
+      pivot: {x: 0.52765936, y: 0.07821365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5c028c3b313bbf0800000000000000
+      internalID: -309882286480767565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 524
+        width: 94
+        height: 100
+      alignment: 9
+      pivot: {x: 0.65406895, y: 0.74309754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1997ac1480ce090800000000000000
+      internalID: -8004013359081352767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_6
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 518
+        width: 83
+        height: 111
+      alignment: 9
+      pivot: {x: 0.4002943, y: 0.6164936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef3ca0c5c097cc60800000000000000
+      internalID: 7838392855477108707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_7
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 213
+        width: 225
+        height: 218
+      alignment: 9
+      pivot: {x: 0.49310383, y: 0.09191237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8ca85e3aecc29d0800000000000000
+      internalID: -2797634065177851688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_8
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 309
+        width: 83
+        height: 121
+      alignment: 9
+      pivot: {x: 0.29435638, y: 0.8248707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c43f9f2988f1a0f0800000000000000
+      internalID: -1107330765263260474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_9
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 314
+        width: 96
+        height: 116
+      alignment: 9
+      pivot: {x: 0.30065283, y: 0.79874396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53dccfb8e64887d70800000000000000
+      internalID: 9041121862276140341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 102
+        width: 57
+        height: 76
+      alignment: 9
+      pivot: {x: 0.34573928, y: 0.84028184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef0f7fed70c94240800000000000000
+      internalID: 4776560526924648423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_11
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 102
+        width: 57
+        height: 75
+      alignment: 9
+      pivot: {x: 0.31851706, y: 0.8379226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a75cca6f4a22b810800000000000000
+      internalID: 1779531323347326882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_12
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 101
+        width: 84
+        height: 41
+      alignment: 9
+      pivot: {x: 0.29680416, y: 0.6261535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00777bdcceb6b9e0800000000000000
+      internalID: -1605886430046359537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_13
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 116
+        width: 87
+        height: 83
+      alignment: 9
+      pivot: {x: 0.19085343, y: 0.81158316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347762dec0c088110800000000000000
+      internalID: 1263272945135286083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_14
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 120
+        width: 88
+        height: 77
+      alignment: 9
+      pivot: {x: 0.15524985, y: 0.8604162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ce8835688a12050800000000000000
+      internalID: 5774081492146252895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 17
+        width: 70
+        height: 69
+      alignment: 9
+      pivot: {x: 0.50000024, y: 0.739874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a2a13d8b3392310800000000000000
+      internalID: 1380691629674474012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_16
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 18
+        width: 70
+        height: 68
+      alignment: 9
+      pivot: {x: 0.7925807, y: 0.74170583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4c9d9fb993b92f0800000000000000
+      internalID: -965114353066326853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock-0_17
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 40
+        width: 84
+        height: 41
+      alignment: 9
+      pivot: {x: 0.29680416, y: 0.60092294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcb51944312bca80800000000000000
+      internalID: -8445620167755055941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
