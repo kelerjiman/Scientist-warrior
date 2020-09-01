@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  id: 040a2912132e7284ba580237a743a80d
+  ItemName: Sword of Ilidan
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: 72817b8e0e6fce94a917ea91ff5fdc96, type: 3}
+  state:
+  - name: 
+    type: 0
+    isInt: 1
+    amount: 6
+  - name: 
+    type: 1
+    isInt: 1
+    amount: 1
+  EquipmentType: 4
+  Properties:
+    Name: 
+    Id: 0
+    Type: 15
+  Model: {fileID: 5292568056801544144, guid: 026a57478e2e4064bb04c402479afd6e, type: 3}

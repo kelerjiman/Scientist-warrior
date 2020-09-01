@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Golden Chest
+  m_EditorClassIdentifier: 
+  id: 7c681a4ddf805ec4ca0752fce192a370
+  ItemName: Golden Chest
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
+  state:
+  - name: 
+    type: 0
+    isInt: 1
+    amount: 1
+  - name: 
+    type: 1
+    isInt: 1
+    amount: 5
+  - name: 
+    type: 4
+    isInt: 0
+    amount: 1
+  EquipmentType: 1
+  Properties:
+    Name: 
+    Id: 0
+    Type: 8
+  Model: {fileID: 748892064072856285, guid: bd6178cbb8a897f409a93e6aa3bc03a5, type: 3}

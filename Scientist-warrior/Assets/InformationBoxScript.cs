@@ -10,7 +10,7 @@ public class InformationBoxScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            DialogCanvas.Instance.PrintMessage(message,null,PlayerVisualScript.Instance.GetItemVisual("Refrence"));
+//            DialogCanvas.Instance.PrintMessage(message,null,PlayerVisualScript.Instance.GetItemVisual("Refrence"));
         }
     }
 

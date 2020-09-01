@@ -3,59 +3,65 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
-[Serializable]
-public class PlayerBodyPart
-{
-    public string Name;
-    [SerializeField] Sprite m_Sprite;
+using Random = UnityEngine.Random;
 
-    public Sprite Sprite
-    {
-        get { return m_Sprite; }
-        set
-        {
-            m_Sprite = value;
-            if (value != null)
-            {
-                PartHodler.sprite = value;
-            }
-        }
-    }
 
-    public SpriteRenderer PartHodler;
-
-}
 public class PlayerVisualScript : MonoBehaviour
 {
-    public List<PlayerBodyPart> playerBodyParts;
+    public Transform BodyPartHolder;
+    public List<BodyPart> playerBodyParts;
     public static PlayerVisualScript Instance;
+
+    private void OnValidate()
+    {
+        if (playerBodyParts.Count <= 1)
+            foreach (var BodyPart in BodyPartHolder.GetComponentsInChildren<BodyPart>())
+            {
+                playerBodyParts.Add(BodyPart);
+            }
+    }
 
     private void Start()
     {
+        foreach (var BodyPart in BodyPartHolder.GetComponentsInChildren<BodyPart>())
+            playerBodyParts.Add(BodyPart);
+
         Instance = this;
     }
 
-    public void SetItemVisual(string name,Sprite sprite)
+    public void SetItemVisual(EquipableItem item)
     {
         foreach (var bodyPart in playerBodyParts)
         {
-            if (bodyPart.Name == name)
+            if (bodyPart.Properties.Type == item.Properties.Type)
             {
-                bodyPart.Sprite = sprite;
+                bodyPart.CurrentModel = Instantiate(item.Model,bodyPart.transform);
+                bodyPart.CurrentModel.transform.position = bodyPart.defaultModel.transform.position;
+                bodyPart.defaultModel.SetActive(false);
                 return;
             }
         }
     }
 
-    [CanBeNull]
-    public Sprite GetItemVisual(string name)
+    public void RemoveItemVisual(EquipableItem item)
     {
         foreach (var bodyPart in playerBodyParts)
         {
-            if (bodyPart.Name == name)
-                return bodyPart.Sprite;
+            if (bodyPart.Properties.Type == item.Properties.Type)
+            {
+                Destroy(bodyPart.CurrentModel);
+                bodyPart.defaultModel.SetActive(true);
+            }
         }
+    }
 
-        return null;
+    public bool HaveItem(EquipableItem item)
+    {
+        foreach (var bodyPart in playerBodyParts)
+            if (bodyPart.Properties.Type == item.Properties.Type &&
+                bodyPart.CurrentModel == item.Model)
+                return true;
+
+        return false;
     }
 }
