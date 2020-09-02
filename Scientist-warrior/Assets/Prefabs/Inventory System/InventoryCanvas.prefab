@@ -1459,10 +1459,10 @@ RectTransform:
   m_Father: {fileID: 3113049345356597774}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 554, y: -270}
-  m_SizeDelta: {x: -1108, y: 540}
+  m_AnchoredPosition: {x: -406, y: -467}
+  m_SizeDelta: {x: 797, y: 540}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3113049344750193409
 CanvasRenderer:
@@ -1851,8 +1851,8 @@ MonoBehaviour:
   EquipmenPanelUI: {fileID: 3113049344750193420}
   InventoryButton: {fileID: 5978344354338233381}
   EquipmentButton: {fileID: 7832270044519897678}
-  inventoryOpen: {x: 555, y: 0}
-  inventoryClose: {x: 1400, y: 0}
+  inventoryOpen: {x: 0, y: 0}
+  inventoryClose: {x: 800, y: 0}
 --- !u!114 &7101698552506623075
 MonoBehaviour:
   m_ObjectHideFlags: 0
