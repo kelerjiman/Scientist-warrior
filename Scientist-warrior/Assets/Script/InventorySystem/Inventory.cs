@@ -54,7 +54,7 @@ public class Inventory : MonoBehaviour, IItemContainer, IDropHandler
         for (; i < StartingItems.Count && i < itemslots.Length; i++)
         {
             itemslots[i].Item = StartingItems[i].GetCopy();
-            itemslots[i].Amount = 1;
+            itemslots[i].Amount = itemslots[i].Amount;
         }
 
         for (; i < itemslots.Length; i++)
@@ -108,7 +108,7 @@ public class Inventory : MonoBehaviour, IItemContainer, IDropHandler
             return false;
         for (int i = 0; i < itemslots.Length; i++)
         {
-            if (itemslots[i].Item.Id == item.Id)
+            if (itemslots[i].Item!=null &&itemslots[i].Item.Id == item.Id)
             {
                 if (itemslots[i].Amount >= amount)
                 {

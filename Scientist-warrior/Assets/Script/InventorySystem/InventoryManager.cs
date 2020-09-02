@@ -17,6 +17,7 @@ public class InventoryManager : MonoBehaviour
     private ItemSlot m_DraggedSlot;
     private ItemSlot m_DropedItemSlot;
     public static InventoryManager Instance;
+    private Vector3 DefItemPosition = Vector2.zero;
 
     private void Awake()
     {
@@ -64,6 +65,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (itemSlot.Item != null)
         {
+            DefItemPosition = Input.mousePosition;
             m_DraggedSlot = itemSlot;
             DragableItem.sprite = itemSlot.Item.Icon;
             DragableItem.GetComponent<CanvasGroup>().interactable = false;
@@ -131,15 +133,19 @@ public class InventoryManager : MonoBehaviour
             }
             else
             {
-                if (dropItemSlot.Item != null)
+                if (m_DraggedSlot as EquipmentSlot != null)
                 {
-                    StateManager.Instance.AddState(((EquipableItem) dropItemSlot.Item).state);
-                    PlayerVisualScript.Instance.SetItemVisual((EquipableItem) dropItemSlot.Item);
-                }
-                if (m_DraggedSlot.Item != null)
-                {
-                    StateManager.Instance.RemoveState(((EquipableItem) m_DraggedSlot.Item).state);
-                    PlayerVisualScript.Instance.RemoveItemVisual((EquipableItem) m_DraggedSlot.Item);
+                    if (dropItemSlot.Item != null)
+                    {
+                        StateManager.Instance.AddState(((EquipableItem) dropItemSlot.Item).state);
+                        PlayerVisualScript.Instance.SetItemVisual((EquipableItem) dropItemSlot.Item);
+                    }
+
+                    if (m_DraggedSlot.Item != null)
+                    {
+                        StateManager.Instance.RemoveState(((EquipableItem) m_DraggedSlot.Item).state);
+                        PlayerVisualScript.Instance.RemoveItemVisual((EquipableItem) m_DraggedSlot.Item);
+                    }
                 }
             }
 
@@ -194,17 +200,19 @@ public class InventoryManager : MonoBehaviour
             EquipableItem previosItem;
             int amount;
             equipmentPanel.AddItem(itemSlot, out previosItem, out amount);
-            
+
             if (previosItem != null)
             {
                 StateManager.Instance.RemoveState(previosItem.state);
                 PlayerVisualScript.Instance.RemoveItemVisual(previosItem);
             }
+
             if (itemSlot != null)
             {
                 StateManager.Instance.AddState(((EquipableItem) itemSlot.Item).state);
                 PlayerVisualScript.Instance.SetItemVisual((EquipableItem) itemSlot.Item);
             }
+
             itemSlot.Item = previosItem;
             itemSlot.Amount = amount;
         }

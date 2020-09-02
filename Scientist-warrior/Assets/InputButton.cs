@@ -46,7 +46,7 @@ public class InputButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            InventoryUI.SetActive(!InventoryUI.activeSelf);
+            InventoryButtonOnclick();
         }
 
         if (Input.GetKeyDown(KeyCode.C))
@@ -57,6 +57,11 @@ public class InputButton : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             EquipmenPanelUI.SetActive(!EquipmenPanelUI.activeSelf);
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            Application.Quit();
         }
     }
 }

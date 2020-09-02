@@ -16,8 +16,8 @@ namespace Script
         public Sprite Icon;
         private void OnValidate()
         {
-            var tmp= AssetDatabase.GetAssetPath(this);
-            id = AssetDatabase.AssetPathToGUID(tmp);
+            var tmp= Random.Range(0,100000).ToString();
+            id = tmp;
         }
 
         public virtual Item GetCopy()
