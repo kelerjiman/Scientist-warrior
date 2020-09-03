@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 6857872334078512976}
+  defaultModel: {fileID: 6857872334078512976}
   CurrentModel: {fileID: 6857872334078512976}
   Properties:
     Name: EyeBrowR
-    Id: 65
+    Id: 3437
     Type: 4
 --- !u!1 &473174808496990321
 GameObject:
@@ -94,11 +94,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 6745565076150179445}
+  defaultModel: {fileID: 6745565076150179445}
   CurrentModel: {fileID: 6745565076150179445}
   Properties:
     Name: FootL
-    Id: 5257
+    Id: 519
     Type: 17
 --- !u!1 &473312576474772609
 GameObject:
@@ -144,11 +144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 1430543059987667004}
+  defaultModel: {fileID: 1430543059987667004}
   CurrentModel: {fileID: 1430543059987667004}
   Properties:
     Name: HandR
-    Id: 1768
+    Id: 6872
     Type: 10
 --- !u!1 &473391997987451209
 GameObject:
@@ -194,11 +194,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 3144617412220246464}
+  defaultModel: {fileID: 3144617412220246464}
   CurrentModel: {fileID: 3144617412220246464}
   Properties:
     Name: EyeL
-    Id: 7915
+    Id: 4649
     Type: 7
 --- !u!1 &473538500196666267
 GameObject:
@@ -244,11 +244,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 6801848051505063761}
+  defaultModel: {fileID: 6801848051505063761}
   CurrentModel: {fileID: 6801848051505063761}
   Properties:
     Name: GloveL
-    Id: 1621
+    Id: 3654
     Type: 13
 --- !u!1 &473553876505896207
 GameObject:
@@ -294,11 +294,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 4672010585583103287}
+  defaultModel: {fileID: 4672010585583103287}
   CurrentModel: {fileID: 4672010585583103287}
   Properties:
     Name: Weapon
-    Id: 7247
+    Id: 8190
     Type: 15
 --- !u!1 &473568459010603195
 GameObject:
@@ -344,11 +344,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 8172919360044189346}
+  defaultModel: {fileID: 8172919360044189346}
   CurrentModel: {fileID: 8172919360044189346}
   Properties:
     Name: Chest
-    Id: 1200
+    Id: 6939
     Type: 8
 --- !u!1 &473580566907652655
 GameObject:
@@ -478,22 +478,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BodyPartHolder: {fileID: 6677416125200086968}
   playerBodyParts:
-  - {fileID: 6858998887881898611}
-  - {fileID: 6857872334078512976}
-  - {fileID: 1160364532198911032}
-  - {fileID: 3144617412220246464}
-  - {fileID: 822104238502494343}
-  - {fileID: 6887687498661582020}
-  - {fileID: 3065102052671829746}
-  - {fileID: 8172919360044189346}
-  - {fileID: 8253994791764144557}
-  - {fileID: 6745565076150179445}
-  - {fileID: 8318791598216850695}
-  - {fileID: 1430543059987667004}
-  - {fileID: 5509215042702328172}
-  - {fileID: 6801848051505063761}
-  - {fileID: 4672010585583103287}
-  - {fileID: 1110194195598320088}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &473580566907652654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,8 +507,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  energy: 0
   partical: {fileID: 5306971146490502574, guid: cbb09194d0e0d5544a2a3ddaa2d5dd00,
     type: 3}
+  healthBar: {fileID: 0}
+  EnergyBar: {fileID: 0}
+  characterState: {fileID: 11400000, guid: 6cc872d1e08cf7045a6c1883555c4050, type: 2}
+  m_MaxHealthState:
+    name: Max Health
+    type: 2
+    isInt: 0
+    amount: 0
+  m_MaxEnergyState:
+    name: maxEnergy
+    type: 3
+    isInt: 1
+    amount: 0
 --- !u!114 &6845900138512835631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,8 +551,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterState: {fileID: 11400000, guid: 6cc872d1e08cf7045a6c1883555c4050, type: 2}
   m_StateUi: {fileID: 0}
-  currentHealth: 0
-  currentEnergy: 0
 --- !u!1 &473765346730095357
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,11 +595,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 3065102052671829746}
+  defaultModel: {fileID: 3065102052671829746}
   CurrentModel: {fileID: 3065102052671829746}
   Properties:
     Name: Cask
-    Id: 7558
+    Id: 7771
     Type: 1
 --- !u!1 &473837847099046113
 GameObject:
@@ -633,11 +645,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 5509215042702328172}
+  defaultModel: {fileID: 5509215042702328172}
   CurrentModel: {fileID: 5509215042702328172}
   Properties:
     Name: GloveR
-    Id: 628
+    Id: 2334
     Type: 12
 --- !u!1 &473865724135584901
 GameObject:
@@ -683,11 +695,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 8253994791764144557}
+  defaultModel: {fileID: 8253994791764144557}
   CurrentModel: {fileID: 8253994791764144557}
   Properties:
     Name: FootR
-    Id: 6299
+    Id: 9258
     Type: 16
 --- !u!1 &473870094710605875
 GameObject:
@@ -733,11 +745,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 8318791598216850695}
+  defaultModel: {fileID: 8318791598216850695}
   CurrentModel: {fileID: 8318791598216850695}
   Properties:
     Name: Shield
-    Id: 2100
+    Id: 4486
     Type: 14
 --- !u!1 &473881960966780157
 GameObject:
@@ -783,11 +795,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 822104238502494343}
+  defaultModel: {fileID: 822104238502494343}
   CurrentModel: {fileID: 822104238502494343}
   Properties:
     Name: EyeR
-    Id: 1555
+    Id: 8117
     Type: 6
 --- !u!1 &474181462183559483
 GameObject:
@@ -833,11 +845,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 1110194195598320088}
+  defaultModel: {fileID: 1110194195598320088}
   CurrentModel: {fileID: 1110194195598320088}
   Properties:
     Name: Shadow
-    Id: 6316
+    Id: 8597
     Type: 18
 --- !u!1 &474238433463872011
 GameObject:
@@ -883,11 +895,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 6858998887881898611}
+  defaultModel: {fileID: 6858998887881898611}
   CurrentModel: {fileID: 6858998887881898611}
   Properties:
     Name: Head
-    Id: 8568
+    Id: 8969
     Type: 2
 --- !u!1 &474251876268680439
 GameObject:
@@ -933,11 +945,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 1160364532198911032}
+  defaultModel: {fileID: 1160364532198911032}
   CurrentModel: {fileID: 1160364532198911032}
   Properties:
     Name: EyeBrowL
-    Id: 5455
+    Id: 2575
     Type: 5
 --- !u!1 &474259592854110991
 GameObject:
@@ -983,11 +995,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528f5b59dab80e0409742838054d5be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultModel: {fileID: 6887687498661582020}
+  defaultModel: {fileID: 6887687498661582020}
   CurrentModel: {fileID: 6887687498661582020}
   Properties:
     Name: Hat
-    Id: 1882
+    Id: 2167
     Type: 3
 --- !u!1 &474930186898755394
 GameObject:
