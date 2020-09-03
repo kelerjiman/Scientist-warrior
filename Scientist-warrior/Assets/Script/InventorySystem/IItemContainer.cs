@@ -2,7 +2,7 @@
 
 public interface IItemContainer
 {
-//    bool ContainItem(Item item);
+    bool ContainItem(Item item);
     int ItemCount(string ItemID);
     bool RemoveItem(Item item);
     Item RemoveItem(string itemID);
