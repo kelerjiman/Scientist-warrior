@@ -8,15 +8,15 @@ namespace Script.CharacterStatus
     public class CharacterState : ScriptableObject
     {
         public List<State> states;
-        public int maxHealth = 1;
-
-        public int maxEnergy = 1;
 
         public void Remove(List<State> states)
         {
             foreach (var state in states)
             {
-                this.states.Find(s => s.type == state.type).amount -= state.amount;
+                if (this.states.Find(s => s.type == state.type) != null)
+                {
+                    this.states.Find(s => s.type == state.type).amount -= state.amount;
+                }
             }
         }
 
@@ -24,7 +24,10 @@ namespace Script.CharacterStatus
         {
             foreach (var state in states)
             {
-                this.states.Find(s => s.type == state.type).amount += state.amount;
+                if (this.states.Find(s => s.type == state.type) != null)
+                {
+                    this.states.Find(s => s.type == state.type).amount += state.amount;
+                }
             }
         }
 
@@ -35,12 +38,29 @@ namespace Script.CharacterStatus
                 s.amount = 1;
             }
         }
+
+        public List<State> GetCopy()
+        {
+            List<State> Temp = new List<State>();
+            foreach (var state in states)
+            {
+                State x = new State
+                {
+                    amount = state.amount,
+                    isInt = state.isInt,
+                    name = state.name,
+                    type = state.type
+                };
+                Temp.Add(x);
+            }
+
+            return Temp;
+        }
     }
 
     [Serializable]
     public class State
     {
-        
         public string name;
         public StateType type;
         public bool isInt;
