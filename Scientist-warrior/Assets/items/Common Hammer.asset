@@ -12,19 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Common Hammer
   m_EditorClassIdentifier: 
-  id: 8fdaf77950c7e8c47b87af212b1ba0e2
+  id: 42697
   ItemName: Common Hamer
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 0ccb5eabef935944e888f2cc90d7d830, type: 3}
   state:
-  - name: damage
+  - name: Damage
     type: 0
-    isInt: 0
+    isInt: 1
     amount: 2
-  - name: armor
-    type: 1
-    isInt: 0
-    amount: 0
   EquipmentType: 4
   Properties:
     Name: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: CommonAxe
   m_EditorClassIdentifier: 
-  id: af7a36c9bdfb1aa4891a18d68591b3d7
+  id: 71090
   ItemName: CommonAxe
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 57e7d836ef19d6745aa5eeae3dd5488e, type: 3}
@@ -20,7 +20,7 @@ MonoBehaviour:
   - name: damage
     type: 0
     isInt: 1
-    amount: 1
+    amount: 2
   EquipmentType: 4
   Properties:
     Name: 

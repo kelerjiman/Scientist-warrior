@@ -12,23 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Golden Chest
   m_EditorClassIdentifier: 
-  id: 7c681a4ddf805ec4ca0752fce192a370
+  id: 34606
   ItemName: Golden Chest
   MaxStack: 1
   Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
   state:
   - name: 
-    type: 0
-    isInt: 1
-    amount: 1
-  - name: 
-    type: 1
-    isInt: 1
-    amount: 5
-  - name: 
-    type: 4
+    type: 2
     isInt: 0
-    amount: 1
+    amount: 10
   EquipmentType: 1
   Properties:
     Name: 

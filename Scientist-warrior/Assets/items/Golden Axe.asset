@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Golden Axe
   m_EditorClassIdentifier: 
-  id: 3c8db04592a80ee43aed650c23fb11f0
+  id: 16011
   ItemName: Golden Axe
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 41443749bfa170940851390b19ededc6, type: 3}
@@ -20,11 +20,11 @@ MonoBehaviour:
   - name: 
     type: 0
     isInt: 1
-    amount: 4
+    amount: 5
   - name: 
     type: 1
     isInt: 1
-    amount: 1
+    amount: 0
   EquipmentType: 4
   Properties:
     Name: 

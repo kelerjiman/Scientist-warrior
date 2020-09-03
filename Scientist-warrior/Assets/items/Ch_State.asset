@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33d89378591cab488a70722c87d2d48, type: 3}
+  m_Name: Ch_State
+  m_EditorClassIdentifier: 
+  states:
+  - name: Max Health
+    type: 2
+    isInt: 0
+    amount: 11
+  - name: Max Energy
+    type: 3
+    isInt: 0
+    amount: 1
+  - name: Armor
+    type: 1
+    isInt: 1
+    amount: 1
+  - name: Damage
+    type: 0
+    isInt: 1
+    amount: 1
+  - name: Heat Resistance
+    type: 5
+    isInt: 0
+    amount: 1
+  - name: Cold Resistance
+    type: 4
+    isInt: 0
+    amount: 1
