@@ -21,6 +21,8 @@ namespace Script
         {
             foreach (var itemAmount in materials)
             {
+                if (itemContainer.ContainItem(itemAmount.item))
+                    Debug.Log(itemAmount.item.name);
                 if (itemContainer.ItemCount(itemAmount.item.Id) < itemAmount.itemAmount)
                     return false;
             }
@@ -43,7 +45,10 @@ namespace Script
                     }
                 }
 
-                itemContainer.AddItem(resault.item.GetCopy());
+                for (int i = 0; i < resault.itemAmount; i++)
+                {
+                    itemContainer.AddItem(resault.item.GetCopy());
+                }
             }
         }
     }
