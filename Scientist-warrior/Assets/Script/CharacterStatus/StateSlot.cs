@@ -18,7 +18,7 @@ namespace Script.CharacterStatus
                 if (state != null )
                 {
                     NameText.text = state.name;
-                    ValueText.text = state.amount.ToString(CultureInfo.InvariantCulture);
+                    ValueText.text = state.amount.ToString();
                 }
             }
         }
