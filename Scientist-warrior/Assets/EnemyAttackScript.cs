@@ -28,6 +28,13 @@ public class EnemyAttackScript : MonoBehaviour, Health
     [SerializeField] private GameObject partical;
     [SerializeField] private int health;
     [SerializeField] private float AttackSpeed = 0.2f;
+    [SerializeField] private SliderScript HealthSlider;
+
+    private void Start()
+    {
+        HealthSlider.MaxAmount = health;
+        HealthSlider.CurrentAmount = health;
+    }
 
     private int Health
     {
@@ -35,6 +42,7 @@ public class EnemyAttackScript : MonoBehaviour, Health
         set
         {
             health = value;
+            HealthSlider.CurrentAmount = health;
             if (health <= 0)
             {
                 Instantiate(partical, transform.position, quaternion.identity);
