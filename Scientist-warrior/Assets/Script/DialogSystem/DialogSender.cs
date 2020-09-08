@@ -2,22 +2,26 @@
 
 namespace Script.DialogSystem
 {
-    public class DialogSender : MonoBehaviour
+    public class DialogSender : SenderBase
     {
         [SerializeField] private int Id;
         public Dialog Dialog;
-        public Transform DialogPlaceHolder;
+        public Transform dialogPlaceHolder;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if(other.CompareTag("Player"))
+            {
+                Dialog.Target = other.transform;
                 SendDialog();
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
+                Dialog.Target = null;
                 CloseDialog();
             }
         }
