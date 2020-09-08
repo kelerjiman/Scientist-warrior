@@ -11,21 +11,28 @@ namespace Script.DialogSystem
         public string Name;
         public int Id;
         public int SenderId;
-        public List<Message> Messages ;
+        public DialogType type;
+        public List<Message> Messages;
         public List<Message> TargetMessage;
+        [HideInInspector] public Transform Target;
+
+        public int DialogCount()
+        {
+            return Messages.Count + TargetMessage.Count;
+        }
     }
 
     public enum DialogType
     {
-        None
+        Normal,
+        Argue
     }
 
     [Serializable]
-    public struct Message
+    public class Message
     {
         public string Title;
 
         [TextArea] public string massage;
-
     }
 }
