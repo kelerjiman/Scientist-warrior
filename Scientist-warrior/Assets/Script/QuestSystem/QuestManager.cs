@@ -109,11 +109,11 @@ namespace Script.QuestSystem
             QuestUi.SetData(quest);
         }
 
-        public void OnInteractableEvent(QuestTarget quetTarget)
+        public void OnInteractableEvent(QuestTarget questTarget)
         {
             foreach (var quest in QuestList)
             {
-                if (quest.InWorldQuestTarget.QuestTarget.TargetId == quetTarget.TargetId)
+                if (quest.InWorldQuestTarget.QuestTarget.TargetId == questTarget.TargetId)
                 {
                     quest.Amount++;
                     if (quest.Amount == quest.MaxAmount)
