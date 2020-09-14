@@ -1,18 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class DialogManager : MonoBehaviour
+namespace Script.DialogSystem
 {
-    // Start is called before the first frame update
-    void Start()
+    public class DialogManager : MonoBehaviour
     {
-        
-    }
+        public DialogUi dialogUi;
+        public static DialogManager Instance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void Awake()
+        {
+            dialogUi.OnCompeleteDialog+= OnCompeleteDialog;
+            Instance = this;
+        }
+
+        private void OnCompeleteDialog(DialogSender sender)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
