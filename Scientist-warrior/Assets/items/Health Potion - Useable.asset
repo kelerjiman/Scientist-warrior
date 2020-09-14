@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8303e05febdc73642aecba51cf262e0c, type: 3}
   m_Name: Health Potion - Useable
   m_EditorClassIdentifier: 
-  id: a217b6b7796bc5e40924bc6b3d5403a9
+  id: 88488
   ItemName: Health Potion
   MaxStack: 10
   Icon: {fileID: 21300000, guid: 3cdd8fc58518c9141a09ebcaba22b399, type: 3}
+  BuyPrice: 1
+  SellPrice: 1
   Type: 1
   useableAmount: 5
+  Energy: 1
+  Health: 1
