@@ -1,4 +1,6 @@
-﻿using TMPro;
+﻿using System;
+using Script.QuestSystem;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +8,78 @@ namespace Script.DialogSystem
 {
     public class DialogUi : MonoBehaviour
     {
-        [SerializeField] private GameObject dataCounter;
+        [SerializeField] private TextMeshProUGUI MessageTextHolder;
+        [SerializeField] private Image AvatarPlaceHolder;
+        [SerializeField] private Button ProgressButton;
+        private int m_CurrentIndex, m_MaxIndex = 0;
+        private DialogSender m_CurrentSender;
+
+
+        public Action<DialogSender> OnCompeleteDialog;
+
+        public DialogSender CurrentSender
+        {
+            get { return m_CurrentSender; }
+            set
+            {
+                m_CurrentSender = value;
+                if (m_CurrentSender == null)
+                {
+                    gameObject.SetActive(false);
+                }
+                else
+                {
+                    gameObject.SetActive(true);
+                }
+            }
+        }
+
+
+//        public static DialogUi Instance;
+        private void Start()
+        {
+            ProgressButton.onClick.AddListener(DialogProgress);
+            gameObject.SetActive(false);
+        }
+
+        public void GetData(DialogSender sender)
+        {
+            if (sender == null)
+            {
+                CurrentSender = null;
+                return;
+            }
+            m_CurrentIndex = 0;
+            CurrentSender = sender;
+            m_MaxIndex = sender.dialog.messages.Count;
+            DialogProgress();
+        }
+
+        private void DialogProgress()
+        {
+            if (m_CurrentIndex < m_MaxIndex && !m_CurrentSender.dialog.m_EndDialog)
+            {
+                MessageTextHolder.text = m_CurrentSender.dialog.messages[m_CurrentIndex].Content;
+                m_CurrentIndex++;
+            }
+            else
+            {
+                m_CurrentSender.dialog.m_EndDialog = true;
+                if (CurrentSender.senderQuest != null && CurrentSender.senderQuest.InWorldQuestTarget != null)
+                {
+                    QuestManager.Instance.QuestUi.SetData(CurrentSender.senderQuest);
+                    QuestManager.Instance.QuestUi.ToggleVisual(true);
+                }
+                CurrentSender = null;
+            }
+        }
+    }
+}
+
+#region OldCode
+
+/*
+ *        [SerializeField] private GameObject dataCounter;
         [SerializeField] private Image AvatarHolder;
         [SerializeField] private TextMeshProUGUI messageHolder;
         [SerializeField] private Button dialogProgressButton;
@@ -106,5 +179,7 @@ namespace Script.DialogSystem
             m_CurrentMessage = null;
             dataCounter.SetActive(false);
         }
-    }
-}
+ * 
+ */
+
+#endregion
