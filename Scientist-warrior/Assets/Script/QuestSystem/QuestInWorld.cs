@@ -1,4 +1,5 @@
 ﻿using System;
+using Script.DialogSystem;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -12,6 +13,8 @@ namespace Script.QuestSystem
         {
             quest.questId = Random.Range(0, 1000000);
         }
+
+//       
 
         public Quest Quest
         {
