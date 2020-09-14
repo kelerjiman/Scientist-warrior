@@ -8,6 +8,7 @@ using UnityEngine;
 
 public static class EventManager
 {
+    public static Action<Item> OnAddItemEvent;
     public static Action<DialogSender> OnSendindDialog;
     public static Action<DialogSender> OnCompeleteDialog;
     public static Action OnCloseDialog;
