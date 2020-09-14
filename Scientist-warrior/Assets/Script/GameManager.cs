@@ -1,21 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace Script
 {
-    public bool GameContinue = true;
-    public static GameManager Instance;
-
-    private void Start()
+    public class GameManager : MonoBehaviour
     {
-        if (Instance == null)
+        public bool gameContinue = true;
+        public static GameManager Instance;
+
+        private void Start()
         {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
