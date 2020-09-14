@@ -12,6 +12,11 @@ public class QuestListUI : MonoBehaviour
     [SerializeField] private QuestButton questButtonPrefab;
     public Action<Quest> OnQuestButtonEvent;
 
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void addQuestButton(Quest quest)
     {
         var temp = Instantiate(questButtonPrefab, Content);
@@ -21,14 +26,17 @@ public class QuestListUI : MonoBehaviour
         QuestButtons.Add(temp);
     }
 
-    public void removeQuestButton(int QuestId)
+    public void RemoveQuestButton(int questId)
     {
         foreach (var questButton in QuestButtons)
         {
-            if (questButton.Quest.questId == QuestId)
+            Debug.Log("RemoveQuestButton");
+            if (questButton.Quest.questId == questId)
+            {
                 Destroy(questButton.gameObject);
-            QuestButtons.Remove(questButton);
-            break;
+                QuestButtons.Remove(questButton);
+                break;
+            }
         }
     }
 
