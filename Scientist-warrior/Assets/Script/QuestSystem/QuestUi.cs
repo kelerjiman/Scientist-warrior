@@ -19,6 +19,8 @@ namespace Script.QuestSystem
                 m_Quest = value;
                 if (m_Quest != null)
                 {
+                    ToggleVisual(true);
+                    m_Quest.InWorldQuestTarget.quest = m_Quest;
                     TrackingButton.interactable = true;
                     
                     DismissButton.interactable = true;
@@ -55,12 +57,12 @@ namespace Script.QuestSystem
                             TrackingButton.onClick.AddListener(TrackingButtonOnclick);
                         }
 
-                        if (m_Quest.Status == QuestStatus.Done)
+                        if (m_Quest.Status == QuestStatus.Done || m_Quest.Status == QuestStatus.Compelete)
                         {
                             TrackingButton.interactable = false;
                             DismissButton.interactable = false;
                         }
-                        ToggleVisual(true);
+                        
                     }
 
                     QuestTitle.text = m_Quest.name;
@@ -112,6 +114,7 @@ namespace Script.QuestSystem
         private void DismissButtonOnclick()
         {
             DismissEvent?.Invoke(Quest);
+            ToggleVisual(false);
         }
     }
 }
