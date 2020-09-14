@@ -36,6 +36,12 @@ namespace Script.QuestSystem
             {
                 texture.color = Color.blue;
             }
+
+            if (Quest.Status == QuestStatus.Compelete)
+            {
+                GetComponent<Button>().interactable = false;
+                texture.color = Color.gray;
+            }
         }
 
         private void Start()
