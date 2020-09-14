@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Common Hammer
   m_EditorClassIdentifier: 
-  id: 42697
+  id: 83035
   ItemName: Common Hamer
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 0ccb5eabef935944e888f2cc90d7d830, type: 3}
+  BuyPrice: 15
+  SellPrice: 1
   state:
   - name: Damage
     type: 0
