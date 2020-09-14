@@ -8,6 +8,30 @@ namespace Script.DialogSystem
     [Serializable]
     public class Dialog
     {
+        [SerializeField] public List<Message> messages;
+        public bool m_EndDialog = false;
+        private int m_Id;
+    }
+[Serializable]
+    public struct Message
+    {
+        public Turn turn;
+        [TextArea] public string Content;
+    }
+
+    public enum Turn
+    {
+        Sender,
+        Opponent
+    }
+}
+
+#region OldCode
+
+/*
+ *  [Serializable]
+    public class Dialog
+    {
         public string Name;
         public int Id;
         public int SenderId;
@@ -35,4 +59,6 @@ namespace Script.DialogSystem
 
         [TextArea] public string massage;
     }
-}
+ */
+
+#endregion
