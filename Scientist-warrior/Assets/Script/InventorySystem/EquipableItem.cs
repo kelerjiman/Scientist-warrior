@@ -21,6 +21,8 @@ public enum EquipmentType
 [CreateAssetMenu]
 public class EquipableItem : Item
 {
+    [Space]
+    [Header("Equipable Item Setting")]
     public List<State> state;
     [Space] public EquipmentType EquipmentType;
     [Header("Visual Effect Attr")] public BodyPartProp Properties;
