@@ -901,6 +901,7 @@ GameObject:
   - component: {fileID: 3113049344177290917}
   - component: {fileID: 3113049344177290918}
   - component: {fileID: 3113049344177290919}
+  - component: {fileID: 6717371001870586000}
   m_Layer: 5
   m_Name: InventoryCanvas
   m_TagString: Untagged
@@ -992,6 +993,24 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6717371001870586000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113049344177290912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0f1c94b3fd03046a7231b345399350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemChestUI: {fileID: 1042356988}
+  inventory: {fileID: 3113049344541007027}
+  equipmentPanel: {fileID: 3113049344750193408}
+  craftingWindow: {fileID: 3113049345370228862}
+  DragableItem: {fileID: 3113049345523992157}
+  m_ItemDestroyPanel: {fileID: 9137896585155357180}
 --- !u!1 &3113049344266478068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,7 +1803,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3113049345356597774}
-  - component: {fileID: 3113049345356597773}
   - component: {fileID: 7389394898186878031}
   - component: {fileID: 7101698552506623075}
   - component: {fileID: 371019701}
@@ -1816,24 +1834,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &3113049345356597773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3113049345356597775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f0f1c94b3fd03046a7231b345399350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemChestUI: {fileID: 1042356988}
-  inventory: {fileID: 3113049344541007027}
-  equipmentPanel: {fileID: 3113049344750193408}
-  craftingWindow: {fileID: 3113049345370228862}
-  DragableItem: {fileID: 3113049345523992157}
-  m_ItemDestroyPanel: {fileID: 9137896585155357180}
 --- !u!114 &7389394898186878031
 MonoBehaviour:
   m_ObjectHideFlags: 0
