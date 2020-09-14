@@ -48,6 +48,7 @@ namespace Script
                 for (int i = 0; i < resault.itemAmount; i++)
                 {
                     itemContainer.AddItem(resault.item.GetCopy());
+                    (itemContainer as Inventory)?.AddItemEvent?.Invoke(resault.item);
                 }
             }
         }
