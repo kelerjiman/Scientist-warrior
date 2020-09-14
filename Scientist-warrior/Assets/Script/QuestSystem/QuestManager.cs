@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Script.InventorySystem;
 
 namespace Script.QuestSystem
 {
@@ -21,8 +22,26 @@ namespace Script.QuestSystem
             QuestUi.DismissEvent += QuestUiOnDismissEvent;
             m_QuestListUi.OnQuestButtonEvent += OnQuestButtonEvent;
             Npc.NpcInteractableEvent += OnInteractableEvent;
-            Visitor.VisitorInteractableEvent += OnInteractableEvent;
+            Visitor.VisitorInteractableEvent += VisitorOnVisitorInteractableEvent;
             m_Inventory.AddItemEvent += InventoryOnAddItemEvent;
+        }
+
+        private void VisitorOnVisitorInteractableEvent(QuestTarget questTarget)
+        {
+            foreach (var quest in QuestList)
+            {
+                if (quest.InWorldQuestTarget.QuestTarget.TargetId == questTarget.TargetId)
+                {
+                    quest.Amount++;
+                    m_QuestListUi.UpdateButton(quest);
+                    break;
+                }
+
+//                if (quest.Status == QuestStatus.Compelete ||)
+//                {
+//                    m_QuestListUi.UpdateButton(quest);
+//                }
+            }
         }
 
         private void Update()
@@ -37,49 +56,59 @@ namespace Script.QuestSystem
 
         private void InventoryOnAddItemEvent(Item item)
         {
-            foreach (var quest in QuestList)
-            {
-                if (quest.type == QuestType.Gathering)
-                {
-                    UpdateQuestItem(quest);
-                }
-            }
+            UpdateQuestItem(item);
+//            var TempQuest = QuestList.Find(quest => (quest.InWorldQuestTarget as QuestItem)?.Item == item);
+//            if (TempQuest != null)
+//            {
+//                Debug.Log("QuestManager ----> InventoryAddItemEvent");
+//                UpdateQuestItem(item, TempQuest);
+//            }
+//
+//            foreach (var quest in QuestList)
+//            {
+//                if (quest.type == QuestType.Gathering)
+//                {
+//                    var itemQuest = quest.InWorldQuestTarget as QuestItem;
+//                    if (itemQuest.Item == item)
+//                    {
+//                        Debug.Log("QuestManager ----> InventoryAddItemEvent");
+//                        UpdateQuestItem(item, quest);
+//                    }
+//                }
+//            }
         }
 
-        private void UpdateQuestItem(Quest quest)
+        private void UpdateQuestItem(Item item, Quest quest)
         {
-            QuestItem temp = quest.InWorldQuestTarget as QuestItem;
-            if (temp != null)
+            quest.Amount = m_Inventory.ItemCount(item.Id);
+            m_QuestListUi.UpdateButton(quest);
+        }
+
+        private void UpdateQuestItem(Item item)
+        {
+            foreach (var q in QuestList)
             {
-                quest.Amount = m_Inventory.ItemCount(temp.Item.Id);
-                if (quest.Status == QuestStatus.Done)
-                {
-                    if (!m_Inventory.IsFull())
-                        if (m_Inventory.EmptySlotCount() >= quest.Rewards.items.Count)
-                        {
-                            if (m_Inventory.RemoveItem(temp.Item, quest.MaxAmount))
-
-                            {
-                                foreach (var RewardItem in quest.Rewards.items)
-                                {
-                                    m_Inventory.AddItem(RewardItem.GetCopy());
-                                }
-
-                                m_QuestListUi.UpdateButton(quest);
-                            }
-                        }
-                }
+                if (q.type == QuestType.Gathering)
+                    if (q.InWorldQuestTarget as QuestItem != null)
+                    {
+                        q.Amount = m_Inventory.ItemCount(item.Id);
+                        m_QuestListUi.UpdateButton(q);
+                    }
             }
+
+            
         }
 
 
-        private void QuestUiOnDismissEvent(Quest obj)
+        private void QuestUiOnDismissEvent(Quest quest)
         {
-            if (RemoveQuest(obj.questId))
+            if(quest.Status==QuestStatus.Current)
+                quest.Status = QuestStatus.Waiting;
+            else
             {
-                obj.Status = QuestStatus.Waiting;
-                m_QuestListUi.removeQuestButton(obj.questId);
-                QuestUi.Quest = obj;
+                RemoveQuest(quest.questId);
+                m_QuestListUi.RemoveQuestButton(quest.questId);
+                QuestUi.SetData(quest);
             }
         }
 
@@ -100,7 +129,11 @@ namespace Script.QuestSystem
             AddQuest(obj);
             if (obj.type == QuestType.Gathering)
             {
-                UpdateQuestItem(obj);
+                var itemQuest = obj.InWorldQuestTarget as QuestItem;
+                if (itemQuest.Item != null)
+                {
+                    UpdateQuestItem(itemQuest.Item, obj);
+                }
             }
         }
 
@@ -116,16 +149,7 @@ namespace Script.QuestSystem
                 if (quest.InWorldQuestTarget.QuestTarget.TargetId == questTarget.TargetId)
                 {
                     quest.Amount++;
-                    if (quest.Amount == quest.MaxAmount)
-                    {
-                        quest.Status = QuestStatus.Done;
-                        m_QuestListUi.UpdateButton(quest);
-                        if (quest.Status == QuestStatus.Done)
-                        {
-                            quest.GetRewards(InventoryManager.Instance.inventory);
-                        }
-                    }
-
+                    m_QuestListUi.UpdateButton(quest);
                     break;
                 }
             }
