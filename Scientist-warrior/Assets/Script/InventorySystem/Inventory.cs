@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Script;
 using Script.QuestSystem;
 using UnityEngine;
@@ -21,7 +22,7 @@ public class Inventory : MonoBehaviour, IItemContainer, IDropHandler
     public event Action<ItemSlot> OnDropEvent;
     public event Action OnDropVoidEvent;
     public event Action<Item> ItemQuestEvent;
-    public event Action<Item> AddItemEvent;
+    public Action<Item> AddItemEvent;
 
     private void Start()
     {
@@ -66,7 +67,6 @@ public class Inventory : MonoBehaviour, IItemContainer, IDropHandler
 
     public bool AddItem(Item item)
     {
-        AddItemEvent?.Invoke(item);
         foreach (var itemSlot in itemslots)
             if (itemSlot.Item != null)
                 if (itemSlot.Item.Id == item.Id)
@@ -84,6 +84,7 @@ public class Inventory : MonoBehaviour, IItemContainer, IDropHandler
                 return true;
             }
 
+//        AddItemEvent?.Invoke(item);
         return false;
     }
 
