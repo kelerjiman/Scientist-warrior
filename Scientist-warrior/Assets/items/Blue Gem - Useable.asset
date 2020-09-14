@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8303e05febdc73642aecba51cf262e0c, type: 3}
   m_Name: Blue Gem - Useable
   m_EditorClassIdentifier: 
-  id: e6fd60f62c01c804399aceca54a25bd6
+  id: 75028
   ItemName: Blue Gem
   MaxStack: 10
   Icon: {fileID: 21300000, guid: 82c1a543e2681bf469773f70fe09f996, type: 3}
+  BuyPrice: 10
+  SellPrice: 1
   Type: 0
   useableAmount: 1
+  Energy: 1
+  Health: 1
