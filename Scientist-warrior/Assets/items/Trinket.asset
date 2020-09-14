@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Trinket
   m_EditorClassIdentifier: 
-  id: 37072
+  id: 90460
   ItemName: Trinket
   MaxStack: 2
   Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
+  BuyPrice: 6
+  SellPrice: 1
   state:
   - name: 
     type: 4
