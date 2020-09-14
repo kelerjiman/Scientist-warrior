@@ -1754,22 +1754,22 @@ PrefabInstance:
     - target: {fileID: 2169476785549278989, guid: 9392042e704e36040add4dd6562544c7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3761126923565547809, guid: 9392042e704e36040add4dd6562544c7,
         type: 3}
       propertyPath: EnemyVisual
       value: 
       objectReference: {fileID: 1231418975486437761}
-    - target: {fileID: 3761126923565547809, guid: 9392042e704e36040add4dd6562544c7,
+    - target: {fileID: 4091407924902920228, guid: 9392042e704e36040add4dd6562544c7,
         type: 3}
-      propertyPath: speed
-      value: 1
+      propertyPath: m_LocalPosition.x
+      value: -0.448
       objectReference: {fileID: 0}
-    - target: {fileID: 3761126923565547809, guid: 9392042e704e36040add4dd6562544c7,
+    - target: {fileID: 4091407924902920228, guid: 9392042e704e36040add4dd6562544c7,
         type: 3}
-      propertyPath: LookDirection
-      value: -1
+      propertyPath: m_LocalPosition.y
+      value: 0.156
       objectReference: {fileID: 0}
     - target: {fileID: 4900892968424879550, guid: 9392042e704e36040add4dd6562544c7,
         type: 3}
