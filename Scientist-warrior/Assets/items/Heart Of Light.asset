@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8303e05febdc73642aecba51cf262e0c, type: 3}
   m_Name: Heart Of Light
   m_EditorClassIdentifier: 
-  id: 93715
+  id: 6738
   ItemName: Heart Of Light
   MaxStack: 5
   Icon: {fileID: 21300000, guid: 9d80066c44a244e11b4bcee1af3060bd, type: 3}
+  BuyPrice: 10
+  SellPrice: 1
   Type: 1
   useableAmount: 1
   Energy: 5
