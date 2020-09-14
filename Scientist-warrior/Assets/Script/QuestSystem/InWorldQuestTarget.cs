@@ -5,6 +5,7 @@ namespace Script.QuestSystem
     public class InWorldQuestTarget: MonoBehaviour
     {
         public QuestTarget QuestTarget;
+        public Quest quest;
 
         private void Start()
         {
