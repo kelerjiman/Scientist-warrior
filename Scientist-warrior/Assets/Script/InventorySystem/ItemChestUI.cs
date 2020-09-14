@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Script.InventorySystem;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -64,6 +65,7 @@ public class ItemChestUI : MonoBehaviour
                 for (int i = 0; i < itemslot.Amount; i++)
                 {
                     Inventory.AddItem(Instantiate(itemslot.Item.GetCopy()));
+                    Inventory.AddItemEvent?.Invoke(itemslot.Item);
                 }
 
             ActiveChest.itemProps.Remove(ActiveChest.itemProps.Find(item => item.item == itemslot.Item));
