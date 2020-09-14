@@ -367,6 +367,8 @@ GameObject:
   - component: {fileID: 473580566907652654}
   - component: {fileID: 6845900138512835631}
   - component: {fileID: 9023080902164222022}
+  - component: {fileID: 5914935209385737712}
+  - component: {fileID: 4962181240777106785}
   m_Layer: 9
   m_Name: SpearMan
   m_TagString: Player
@@ -385,6 +387,7 @@ Transform:
   m_LocalPosition: {x: -4.448, y: -3.798, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2098816425170266188}
   - {fileID: 6677416125200086968}
   - {fileID: 474930186898755393}
   m_Father: {fileID: 0}
@@ -478,22 +481,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BodyPartHolder: {fileID: 6677416125200086968}
   playerBodyParts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2815510587894810357}
+  - {fileID: 6888967984297869651}
+  - {fileID: 6314771277776257770}
+  - {fileID: 3071363354204649259}
+  - {fileID: 7240840858960386770}
+  - {fileID: 2223095353520440813}
+  - {fileID: 1262874934696237991}
+  - {fileID: 2949615360774134871}
+  - {fileID: 6829726277744847552}
+  - {fileID: 7711127373901696174}
+  - {fileID: 6745202513996759915}
+  - {fileID: 1747875528289295058}
+  - {fileID: 4971960366694081139}
+  - {fileID: 8347141308184140521}
+  - {fileID: 5734882154505423828}
+  - {fileID: 1954360235758096543}
 --- !u!114 &473580566907652654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,23 +509,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df94450feea81143ab4b84bc3ed7b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  energy: 0
+  currentHealth: 1
+  currentEnergy: 1
   partical: {fileID: 5306971146490502574, guid: cbb09194d0e0d5544a2a3ddaa2d5dd00,
     type: 3}
   healthBar: {fileID: 0}
   EnergyBar: {fileID: 0}
   characterState: {fileID: 11400000, guid: 6cc872d1e08cf7045a6c1883555c4050, type: 2}
-  m_MaxHealthState:
-    name: Max Health
-    type: 2
-    isInt: 0
-    amount: 0
-  m_MaxEnergyState:
-    name: maxEnergy
-    type: 3
-    isInt: 1
-    amount: 0
 --- !u!114 &6845900138512835631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,6 +544,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterState: {fileID: 11400000, guid: 6cc872d1e08cf7045a6c1883555c4050, type: 2}
   m_StateUi: {fileID: 0}
+  m_PlayerHealth: {fileID: 473580566907652654}
+--- !u!114 &5914935209385737712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473580566907652655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b744545e095dc40ad8acb039e8004c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameContinue: 1
+--- !u!114 &4962181240777106785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473580566907652655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45b4d5c0beebf54b8e352548c03ee82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Avatar: {fileID: 21300004, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
 --- !u!1 &473765346730095357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 475453110423241767}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &474930186898755392
 BoxCollider2D:
@@ -1544,6 +1564,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1 &3077596975506097957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098816425170266188}
+  m_Layer: 9
+  m_Name: DialogPlaceHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098816425170266188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3077596975506097957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.09, y: 0.407, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 475453110423241767}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3144617412220246464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,7 +2288,7 @@ Transform:
   - {fileID: 475197238272540167}
   - {fileID: 4369898013159216101}
   m_Father: {fileID: 475453110423241767}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7562507120024006109
 Animator:
