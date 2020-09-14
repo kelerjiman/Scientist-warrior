@@ -12,6 +12,8 @@ public enum UseableType
 [CreateAssetMenu(fileName = "Useable Item", menuName = "Useable Item")]
 public class UseableItem : Item
 {
+    [Space]
+    [Header("useable Setting")]
     public UseableType Type;
     public int useableAmount = 1;
     public int Energy = 1;
