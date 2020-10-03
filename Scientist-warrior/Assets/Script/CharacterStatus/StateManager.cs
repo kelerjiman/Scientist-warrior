@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Script.CombatSystem;
 using UnityEngine;
 
 namespace Script.CharacterStatus
@@ -9,7 +10,7 @@ namespace Script.CharacterStatus
         public CharacterState characterState;
         [SerializeField] private StateUI m_StateUi;
         
-        public PlayerHealth m_PlayerHealth;
+        public PlayerCombat m_PlayerCombat;
         public static StateManager Instance;
         void Start()
         {
@@ -25,7 +26,7 @@ namespace Script.CharacterStatus
                 m_StateUi.AddState(state);
             }
             characterState.Add(obj);
-            m_PlayerHealth.RefreshSliders();
+            m_PlayerCombat.RefreshSliders();
         }
 
         public void RemoveState(List<State> obj)
@@ -36,7 +37,7 @@ namespace Script.CharacterStatus
                 m_StateUi.RemoveState(state);
             }
             characterState.Remove(obj);
-            m_PlayerHealth.RefreshSliders();
+            m_PlayerCombat.RefreshSliders();
         }
     }
 }
