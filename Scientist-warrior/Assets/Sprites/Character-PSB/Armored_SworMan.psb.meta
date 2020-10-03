@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: abadc7293dd49e84a80a2530a949c8a0
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: EarBow Near
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 241
+      y: 48
+      width: 10
+      height: 4
+    spriteID: a15011b8f2e7d0f499d63c48afb6431e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 145, y: -86}
+  - name: EarBowFar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 162
+      width: 10
+      height: 4
+    spriteID: d702be6ca01f71a47941e6e07cf1ac29
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -28, y: 28}
+  - name: Eye Far
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 241
+      y: 4
+      width: 11
+      height: 14
+    spriteID: 71ccc25747fe9e543a69a1e9d0a6e6ee
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 172, y: -112}
+  - name: Eye Near
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 241
+      y: 26
+      width: 11
+      height: 14
+    spriteID: dcbea9443d1f4f94cb181fe05636f017
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 145, y: -90}
+  - name: Lib
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 162
+      width: 10
+      height: 4
+    spriteID: 9e7661d04b1b720438fa26628e46d54f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -23, y: 52}
+  - name: Cask
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 4
+      width: 73
+      height: 48
+    spriteID: f5d5147f6689dc54f90700215c116a9a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 32, y: -99}
+  - name: Head
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 73
+      height: 49
+    spriteID: 90b6ad5dd5d0753499ef8ddcd9a406b6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -49, y: -98}
+  - name: NearGlove
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 124
+      width: 24
+      height: 32
+    spriteID: ad8678b615220e840adfa5614dbbf942
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -20, y: 58}
+  - name: NearHand
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 61
+      width: 19
+      height: 48
+    spriteID: b8722237b530c8f4ebe98b89458f198e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 124, y: -7}
+  - name: chest
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 4
+      width: 67
+      height: 49
+    spriteID: 52a5ca03ee85617439f8c23ca6a09ae9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 111, y: -60}
+  - name: Chest_Torso
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 61
+      width: 63
+      height: 55
+    spriteID: 1f07e791f76c61645a8e339899a7d017
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -52, y: -6}
+  - name: Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 61
+      width: 84
+      height: 18
+    spriteID: 2e6ec97a1b273dc478c379eaca1f3a7f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 94, y: 16}
+  - name: NearLeg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 136
+      y: 87
+      width: 6
+      height: 23
+    spriteID: d9e74e5ff3c41314c86862a503eb7055
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 38, y: 33}
+  - name: FarLeg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 150
+      y: 87
+      width: 6
+      height: 21
+    spriteID: 18cbf70fcca9e864b8d04e8357f740a1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 78, y: 33}
+  - name: Weapon
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 61
+      width: 53
+      height: 55
+    spriteID: 616922d33f656c7469e74c2c18111045
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 74, y: -11}
+  - name: FarGlove
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 124
+      width: 32
+      height: 30
+    spriteID: 13708e936b551e546b33e1a916287286
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 54}
+  - name: FarHand
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 124
+      width: 30
+      height: 44
+    spriteID: 1ac8c1ad7ccb8cf4ea83f7f5ddab523a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -35, y: 52}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 256
+  importedTextureHeight: 256
+  documentSize: {x: 126, y: 189}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 256
+  textureActualHeight: 256
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: EarBow Near
+    spriteName: EarBow Near
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a15011b8f2e7d0f499d63c48afb6431e
+    layerID: 22
+    mosaicPosition: {x: 241, y: 48}
+  - name: EarBowFar
+    spriteName: EarBowFar
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d702be6ca01f71a47941e6e07cf1ac29
+    layerID: 20
+    mosaicPosition: {x: 42, y: 162}
+  - name: Eye Far
+    spriteName: Eye Far
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 71ccc25747fe9e543a69a1e9d0a6e6ee
+    layerID: 23
+    mosaicPosition: {x: 241, y: 4}
+  - name: Eye Near
+    spriteName: Eye Near
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dcbea9443d1f4f94cb181fe05636f017
+    layerID: 25
+    mosaicPosition: {x: 241, y: 26}
+  - name: Lib
+    spriteName: Lib
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9e7661d04b1b720438fa26628e46d54f
+    layerID: 18
+    mosaicPosition: {x: 60, y: 162}
+  - name: Cask
+    spriteName: Cask
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f5d5147f6689dc54f90700215c116a9a
+    layerID: 26
+    mosaicPosition: {x: 85, y: 4}
+  - name: Head
+    spriteName: Head
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 90b6ad5dd5d0753499ef8ddcd9a406b6
+    layerID: 4
+    mosaicPosition: {x: 4, y: 4}
+  - name: NearGlove
+    spriteName: NearGlove
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ad8678b615220e840adfa5614dbbf942
+    layerID: 32
+    mosaicPosition: {x: 82, y: 124}
+  - name: NearHand
+    spriteName: NearHand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b8722237b530c8f4ebe98b89458f198e
+    layerID: 12
+    mosaicPosition: {x: 228, y: 61}
+  - name: chest
+    spriteName: chest
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 52a5ca03ee85617439f8c23ca6a09ae9
+    layerID: 33
+    mosaicPosition: {x: 166, y: 4}
+  - name: Chest_Torso
+    spriteName: Chest_Torso
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1f07e791f76c61645a8e339899a7d017
+    layerID: 6
+    mosaicPosition: {x: 4, y: 61}
+  - name: Shadow
+    spriteName: Shadow
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2e6ec97a1b273dc478c379eaca1f3a7f
+    layerID: 2
+    mosaicPosition: {x: 136, y: 61}
+  - name: NearLeg
+    spriteName: NearLeg
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d9e74e5ff3c41314c86862a503eb7055
+    layerID: 16
+    mosaicPosition: {x: 136, y: 87}
+  - name: FarLeg
+    spriteName: FarLeg
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 18cbf70fcca9e864b8d04e8357f740a1
+    layerID: 14
+    mosaicPosition: {x: 150, y: 87}
+  - name: Weapon
+    spriteName: Weapon
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 616922d33f656c7469e74c2c18111045
+    layerID: 28
+    mosaicPosition: {x: 75, y: 61}
+  - name: FarGlove
+    spriteName: FarGlove
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 13708e936b551e546b33e1a916287286
+    layerID: 30
+    mosaicPosition: {x: 42, y: 124}
+  - name: FarHand
+    spriteName: FarHand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1ac8c1ad7ccb8cf4ea83f7f5ddab523a
+    layerID: 10
+    mosaicPosition: {x: 4, y: 124}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Armored_SworMan Texture
+  prefabAssetName: Armored_SworMan Prefab
+  spriteLibAssetName: Armored_SworMan Sprite Lib
+  secondarySpriteTextures: []
