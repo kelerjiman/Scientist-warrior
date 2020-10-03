@@ -21,7 +21,7 @@ public class UseableItem : Item
 
     public override bool UseItem()
     {
-        StateManager.Instance.m_PlayerHealth.CurrentChange(Energy,Health);
+        StateManager.Instance.m_PlayerCombat.CurrentChange(Energy,Health);
         return true;
     }
 
