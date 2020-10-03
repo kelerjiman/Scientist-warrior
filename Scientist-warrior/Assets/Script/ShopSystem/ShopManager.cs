@@ -16,6 +16,7 @@ namespace Script.ShopSystem
         private void Awake()
         {
             InventoryManager.Instance.inventory.OnRightClickEvent += InventoryOnOnRightClickEvent;
+            Instance = this;
         }
 
         private void InventoryOnOnRightClickEvent(ItemSlot itemSlot)
