@@ -24977,7 +24977,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Item
       value: 
-      objectReference: {fileID: 1607262246}
+      objectReference: {fileID: 1000340548}
     - target: {fileID: 1139887554994020876, guid: 99d7220efded3594f959c66b9648c75e,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -25023,7 +25023,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Item
       value: 
-      objectReference: {fileID: 1781657479}
+      objectReference: {fileID: 1841781816}
     - target: {fileID: 1139887554994020881, guid: 99d7220efded3594f959c66b9648c75e,
         type: 3}
       propertyPath: m_Amount
@@ -25063,7 +25063,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Item
       value: 
-      objectReference: {fileID: 1376164782}
+      objectReference: {fileID: 1526685267}
     - target: {fileID: 2619480684943620303, guid: 99d7220efded3594f959c66b9648c75e,
         type: 3}
       propertyPath: m_Enabled
@@ -25708,7 +25708,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Item
       value: 
-      objectReference: {fileID: 1832394078}
+      objectReference: {fileID: 237521206}
     - target: {fileID: 3347938047395911358, guid: 99d7220efded3594f959c66b9648c75e,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -25844,7 +25844,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Item
       value: 
-      objectReference: {fileID: 2043243363}
+      objectReference: {fileID: 1167873706}
     - target: {fileID: 4458179829702259065, guid: 99d7220efded3594f959c66b9648c75e,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -25960,7 +25960,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Item
       value: 
-      objectReference: {fileID: 1200345820}
+      objectReference: {fileID: 1985444021}
     - target: {fileID: 5120765264457731514, guid: 99d7220efded3594f959c66b9648c75e,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -26065,7 +26065,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Item
       value: 
-      objectReference: {fileID: 486003910}
+      objectReference: {fileID: 1460912428}
     - target: {fileID: 6125931710852825626, guid: 99d7220efded3594f959c66b9648c75e,
         type: 3}
       propertyPath: m_Enabled
@@ -26541,7 +26541,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &183387916
+--- !u!114 &237521206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26551,25 +26551,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Common Hammer(Clone)
+  m_Name: Trinket(Clone)
   m_EditorClassIdentifier: 
-  id: 76916
-  ItemName: Common Hamer
-  MaxStack: 1
-  Icon: {fileID: 21300000, guid: 0ccb5eabef935944e888f2cc90d7d830, type: 3}
-  BuyPrice: 15
+  id: 84529
+  ItemName: Trinket
+  MaxStack: 2
+  Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
+  BuyPrice: 6
   SellPrice: 1
   state:
-  - name: Damage
-    type: 0
+  - name: 
+    type: 4
     isInt: 1
-    amount: 2
-  EquipmentType: 4
+    amount: 1
+  - name: 
+    type: 5
+    isInt: 1
+    amount: 5
+  EquipmentType: 7
   Properties:
     Name: 
     Id: 0
-    Type: 15
-  Model: {fileID: 4853943322830707733, guid: 73fd8c1ac1011a04582d7a9170349793, type: 3}
+    Type: 0
+  Model: {fileID: 0}
 --- !u!1 &238147018
 GameObject:
   m_ObjectHideFlags: 0
@@ -26922,35 +26926,6 @@ MonoBehaviour:
     InWorldQuestTarget: {fileID: 0}
     amount: 0
     MaxAmount: 5
---- !u!114 &486003910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: CommonAxe(Clone)
-  m_EditorClassIdentifier: 
-  id: 7629
-  ItemName: CommonAxe
-  MaxStack: 1
-  Icon: {fileID: 21300000, guid: 57e7d836ef19d6745aa5eeae3dd5488e, type: 3}
-  BuyPrice: 7
-  SellPrice: 1
-  state:
-  - name: damage
-    type: 0
-    isInt: 1
-    amount: 2
-  EquipmentType: 4
-  Properties:
-    Name: 
-    Id: 0
-    Type: 15
-  Model: {fileID: 9018434352457198942, guid: 2b1ed7bac72515746b312741f393e69d, type: 3}
 --- !u!1 &571575555
 GameObject:
   m_ObjectHideFlags: 0
@@ -27162,6 +27137,39 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 95941837}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &788002544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Trinket(Clone)
+  m_EditorClassIdentifier: 
+  id: 84529
+  ItemName: Trinket
+  MaxStack: 2
+  Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
+  BuyPrice: 6
+  SellPrice: 1
+  state:
+  - name: 
+    type: 4
+    isInt: 1
+    amount: 1
+  - name: 
+    type: 5
+    isInt: 1
+    amount: 5
+  EquipmentType: 7
+  Properties:
+    Name: 
+    Id: 0
+    Type: 0
+  Model: {fileID: 0}
 --- !u!1 &810546666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7883473621327912975, guid: f94496ca85a5fb8468e25af084d2b297,
@@ -27486,7 +27494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1006170270
+--- !u!114 &1000340548
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27498,7 +27506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Golden Axe(Clone)
   m_EditorClassIdentifier: 
-  id: 64762
+  id: 23550
   ItemName: Golden Axe
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 41443749bfa170940851390b19ededc6, type: 3}
@@ -27698,6 +27706,68 @@ Transform:
   m_Father: {fileID: 922004090}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1152294356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Sword(Clone)
+  m_EditorClassIdentifier: 
+  id: 65633
+  ItemName: Sword of Ilidan
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: 72817b8e0e6fce94a917ea91ff5fdc96, type: 3}
+  BuyPrice: 8
+  SellPrice: 1
+  state:
+  - name: 
+    type: 0
+    isInt: 1
+    amount: 4
+  - name: 
+    type: 1
+    isInt: 1
+    amount: 2
+  EquipmentType: 4
+  Properties:
+    Name: 
+    Id: 0
+    Type: 15
+  Model: {fileID: 5292568056801544144, guid: 026a57478e2e4064bb04c402479afd6e, type: 3}
+--- !u!114 &1167873706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Golden Chest(Clone)
+  m_EditorClassIdentifier: 
+  id: 25668
+  ItemName: Golden Chest
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
+  BuyPrice: 35
+  SellPrice: 1
+  state:
+  - name: 
+    type: 2
+    isInt: 0
+    amount: 10
+  EquipmentType: 1
+  Properties:
+    Name: 
+    Id: 0
+    Type: 8
+  Model: {fileID: 748892064072856285, guid: bd6178cbb8a897f409a93e6aa3bc03a5, type: 3}
 --- !u!1001 &1176872548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27719,16 +27789,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpearMan
-      objectReference: {fileID: 0}
-    - target: {fileID: 474930186898755393, guid: 79a326942988f034eb608d8c041f0656,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 474930186898755393, guid: 79a326942988f034eb608d8c041f0656,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.067
       objectReference: {fileID: 0}
     - target: {fileID: 475453110423241767, guid: 79a326942988f034eb608d8c041f0656,
         type: 3}
@@ -27785,21 +27845,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2098816425170266188, guid: 79a326942988f034eb608d8c041f0656,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.389
-      objectReference: {fileID: 0}
-    - target: {fileID: 2098816425170266188, guid: 79a326942988f034eb608d8c041f0656,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.083
-      objectReference: {fileID: 0}
-    - target: {fileID: 8317461045389086457, guid: 79a326942988f034eb608d8c041f0656,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9023080902164222022, guid: 79a326942988f034eb608d8c041f0656,
         type: 3}
       propertyPath: m_StateUi
@@ -27807,35 +27852,6 @@ PrefabInstance:
       objectReference: {fileID: 1892844362}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79a326942988f034eb608d8c041f0656, type: 3}
---- !u!114 &1200345820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Common Hammer(Clone)
-  m_EditorClassIdentifier: 
-  id: 76916
-  ItemName: Common Hamer
-  MaxStack: 1
-  Icon: {fileID: 21300000, guid: 0ccb5eabef935944e888f2cc90d7d830, type: 3}
-  BuyPrice: 15
-  SellPrice: 1
-  state:
-  - name: Damage
-    type: 0
-    isInt: 1
-    amount: 2
-  EquipmentType: 4
-  Properties:
-    Name: 
-    Id: 0
-    Type: 15
-  Model: {fileID: 4853943322830707733, guid: 73fd8c1ac1011a04582d7a9170349793, type: 3}
 --- !u!1 &1208740858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2114345125744048595, guid: f94496ca85a5fb8468e25af084d2b297,
@@ -27936,6 +27952,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa1b3354375021649b6733630e8df9fe, type: 3}
+--- !u!114 &1296976910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Golden Axe(Clone)
+  m_EditorClassIdentifier: 
+  id: 23550
+  ItemName: Golden Axe
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: 41443749bfa170940851390b19ededc6, type: 3}
+  BuyPrice: 25
+  SellPrice: 1
+  state:
+  - name: 
+    type: 0
+    isInt: 1
+    amount: 5
+  - name: 
+    type: 1
+    isInt: 1
+    amount: 0
+  EquipmentType: 4
+  Properties:
+    Name: 
+    Id: 0
+    Type: 15
+  Model: {fileID: 1649831603414069452, guid: feaf8ece3f2a6724f87fb0dedc81c8b7, type: 3}
 --- !u!1 &1300513598
 GameObject:
   m_ObjectHideFlags: 0
@@ -28019,7 +28068,7 @@ MonoBehaviour:
       silver: 0
       cooper: 0
     type: 0
-    InWorldQuestTarget: {fileID: 0}
+    InWorldQuestTarget: {fileID: 1833302080}
     amount: 0
     MaxAmount: 1
 --- !u!212 &1300513600
@@ -28133,35 +28182,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1351093808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Golden Chest(Clone)
-  m_EditorClassIdentifier: 
-  id: 88154
-  ItemName: Golden Chest
-  MaxStack: 1
-  Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
-  BuyPrice: 35
-  SellPrice: 1
-  state:
-  - name: 
-    type: 2
-    isInt: 0
-    amount: 10
-  EquipmentType: 1
-  Properties:
-    Name: 
-    Id: 0
-    Type: 8
-  Model: {fileID: 748892064072856285, guid: bd6178cbb8a897f409a93e6aa3bc03a5, type: 3}
 --- !u!1 &1358580424
 GameObject:
   m_ObjectHideFlags: 0
@@ -28192,39 +28212,6 @@ Transform:
   m_Father: {fileID: 1833302075}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1376164782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Sword(Clone)
-  m_EditorClassIdentifier: 
-  id: 36227
-  ItemName: Sword of Ilidan
-  MaxStack: 1
-  Icon: {fileID: 21300000, guid: 72817b8e0e6fce94a917ea91ff5fdc96, type: 3}
-  BuyPrice: 8
-  SellPrice: 1
-  state:
-  - name: 
-    type: 0
-    isInt: 1
-    amount: 4
-  - name: 
-    type: 1
-    isInt: 1
-    amount: 2
-  EquipmentType: 4
-  Properties:
-    Name: 
-    Id: 0
-    Type: 15
-  Model: {fileID: 5292568056801544144, guid: 026a57478e2e4064bb04c402479afd6e, type: 3}
 --- !u!114 &1387526248 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1310314010682621015, guid: 6f4e237174cb6ce46b8d0f6005a5f4a6,
@@ -28237,6 +28224,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ef4c0da410cf34780e3b3bd72ce254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1431612370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Golden Chest(Clone)
+  m_EditorClassIdentifier: 
+  id: 25668
+  ItemName: Golden Chest
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
+  BuyPrice: 35
+  SellPrice: 1
+  state:
+  - name: 
+    type: 2
+    isInt: 0
+    amount: 10
+  EquipmentType: 1
+  Properties:
+    Name: 
+    Id: 0
+    Type: 8
+  Model: {fileID: 748892064072856285, guid: bd6178cbb8a897f409a93e6aa3bc03a5, type: 3}
+--- !u!114 &1460912428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: CommonAxe(Clone)
+  m_EditorClassIdentifier: 
+  id: 44645
+  ItemName: CommonAxe
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: 57e7d836ef19d6745aa5eeae3dd5488e, type: 3}
+  BuyPrice: 7
+  SellPrice: 1
+  state:
+  - name: damage
+    type: 0
+    isInt: 1
+    amount: 2
+  EquipmentType: 4
+  Properties:
+    Name: 
+    Id: 0
+    Type: 15
+  Model: {fileID: 9018434352457198942, guid: 2b1ed7bac72515746b312741f393e69d, type: 3}
 --- !u!1001 &1516542197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28306,7 +28351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5193c5b40d07e5b48978e36748c43f52, type: 3}
---- !u!114 &1600324973
+--- !u!114 &1526685267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28318,7 +28363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Sword(Clone)
   m_EditorClassIdentifier: 
-  id: 36227
+  id: 65633
   ItemName: Sword of Ilidan
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 72817b8e0e6fce94a917ea91ff5fdc96, type: 3}
@@ -28345,40 +28390,7 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5090438287838990740}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1607262246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Golden Axe(Clone)
-  m_EditorClassIdentifier: 
-  id: 64762
-  ItemName: Golden Axe
-  MaxStack: 1
-  Icon: {fileID: 21300000, guid: 41443749bfa170940851390b19ededc6, type: 3}
-  BuyPrice: 25
-  SellPrice: 1
-  state:
-  - name: 
-    type: 0
-    isInt: 1
-    amount: 5
-  - name: 
-    type: 1
-    isInt: 1
-    amount: 0
-  EquipmentType: 4
-  Properties:
-    Name: 
-    Id: 0
-    Type: 15
-  Model: {fileID: 1649831603414069452, guid: feaf8ece3f2a6724f87fb0dedc81c8b7, type: 3}
---- !u!114 &1658073164
+--- !u!114 &1616846779
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28390,40 +28402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Trinket(Clone)
   m_EditorClassIdentifier: 
-  id: 21713
-  ItemName: Trinket
-  MaxStack: 2
-  Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
-  BuyPrice: 6
-  SellPrice: 1
-  state:
-  - name: 
-    type: 4
-    isInt: 1
-    amount: 1
-  - name: 
-    type: 5
-    isInt: 1
-    amount: 5
-  EquipmentType: 7
-  Properties:
-    Name: 
-    Id: 0
-    Type: 0
-  Model: {fileID: 0}
---- !u!114 &1666186314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Trinket(Clone)
-  m_EditorClassIdentifier: 
-  id: 21713
+  id: 84529
   ItemName: Trinket
   MaxStack: 2
   Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
@@ -28450,7 +28429,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1176872548}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1781657479
+--- !u!114 &1776344067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28460,62 +28439,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Trinket(Clone)
+  m_Name: Common Hammer(Clone)
   m_EditorClassIdentifier: 
-  id: 21713
-  ItemName: Trinket
-  MaxStack: 2
-  Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
-  BuyPrice: 6
+  id: 14339
+  ItemName: Common Hamer
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: 0ccb5eabef935944e888f2cc90d7d830, type: 3}
+  BuyPrice: 15
   SellPrice: 1
   state:
-  - name: 
-    type: 4
+  - name: Damage
+    type: 0
     isInt: 1
-    amount: 1
-  - name: 
-    type: 5
-    isInt: 1
-    amount: 5
-  EquipmentType: 7
+    amount: 2
+  EquipmentType: 4
   Properties:
     Name: 
     Id: 0
-    Type: 0
-  Model: {fileID: 0}
---- !u!114 &1832394078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Trinket(Clone)
-  m_EditorClassIdentifier: 
-  id: 21713
-  ItemName: Trinket
-  MaxStack: 2
-  Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
-  BuyPrice: 6
-  SellPrice: 1
-  state:
-  - name: 
-    type: 4
-    isInt: 1
-    amount: 1
-  - name: 
-    type: 5
-    isInt: 1
-    amount: 5
-  EquipmentType: 7
-  Properties:
-    Name: 
-    Id: 0
-    Type: 0
-  Model: {fileID: 0}
+    Type: 15
+  Model: {fileID: 4853943322830707733, guid: 73fd8c1ac1011a04582d7a9170349793, type: 3}
 --- !u!1 &1833302074
 GameObject:
   m_ObjectHideFlags: 0
@@ -28529,6 +28471,7 @@ GameObject:
   - component: {fileID: 1833302077}
   - component: {fileID: 1833302079}
   - component: {fileID: 1833302078}
+  - component: {fileID: 1833302080}
   m_Layer: 10
   m_Name: Visual
   m_TagString: Untagged
@@ -28677,6 +28620,70 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1833302080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833302074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5103d178565f4788aca9381eae0e8ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuestTarget:
+    TargetId: 0
+  quest:
+    questId: 0
+    name: 
+    description: 
+    order: -1
+    dependencies: []
+    Status: 0
+    Rewards:
+      XP: 1
+      items: []
+      Gold: 0
+      silver: 0
+      cooper: 0
+    type: 0
+    InWorldQuestTarget: {fileID: 0}
+    amount: 0
+    MaxAmount: 5
+--- !u!114 &1841781816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Trinket(Clone)
+  m_EditorClassIdentifier: 
+  id: 84529
+  ItemName: Trinket
+  MaxStack: 2
+  Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
+  BuyPrice: 6
+  SellPrice: 1
+  state:
+  - name: 
+    type: 4
+    isInt: 1
+    amount: 1
+  - name: 
+    type: 5
+    isInt: 1
+    amount: 5
+  EquipmentType: 7
+  Properties:
+    Name: 
+    Id: 0
+    Type: 0
+  Model: {fileID: 0}
 --- !u!224 &1872981566 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3504980896784682829, guid: 871f5fb87f17bfd4a940e9f273d9ce94,
@@ -28767,6 +28774,64 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2538114454078549862}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1982989707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: CommonAxe(Clone)
+  m_EditorClassIdentifier: 
+  id: 44645
+  ItemName: CommonAxe
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: 57e7d836ef19d6745aa5eeae3dd5488e, type: 3}
+  BuyPrice: 7
+  SellPrice: 1
+  state:
+  - name: damage
+    type: 0
+    isInt: 1
+    amount: 2
+  EquipmentType: 4
+  Properties:
+    Name: 
+    Id: 0
+    Type: 15
+  Model: {fileID: 9018434352457198942, guid: 2b1ed7bac72515746b312741f393e69d, type: 3}
+--- !u!114 &1985444021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
+  m_Name: Common Hammer(Clone)
+  m_EditorClassIdentifier: 
+  id: 14339
+  ItemName: Common Hamer
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: 0ccb5eabef935944e888f2cc90d7d830, type: 3}
+  BuyPrice: 15
+  SellPrice: 1
+  state:
+  - name: Damage
+    type: 0
+    isInt: 1
+    amount: 2
+  EquipmentType: 4
+  Properties:
+    Name: 
+    Id: 0
+    Type: 15
+  Model: {fileID: 4853943322830707733, guid: 73fd8c1ac1011a04582d7a9170349793, type: 3}
 --- !u!1 &1991735465
 GameObject:
   m_ObjectHideFlags: 0
@@ -28997,35 +29062,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbb09194d0e0d5544a2a3ddaa2d5dd00, type: 3}
---- !u!114 &2043243363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Golden Chest(Clone)
-  m_EditorClassIdentifier: 
-  id: 88154
-  ItemName: Golden Chest
-  MaxStack: 1
-  Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
-  BuyPrice: 35
-  SellPrice: 1
-  state:
-  - name: 
-    type: 2
-    isInt: 0
-    amount: 10
-  EquipmentType: 1
-  Properties:
-    Name: 
-    Id: 0
-    Type: 8
-  Model: {fileID: 748892064072856285, guid: bd6178cbb8a897f409a93e6aa3bc03a5, type: 3}
 --- !u!114 &2055459609 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3391706357873844027, guid: f94496ca85a5fb8468e25af084d2b297,
@@ -29038,35 +29074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2106476274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: CommonAxe(Clone)
-  m_EditorClassIdentifier: 
-  id: 7629
-  ItemName: CommonAxe
-  MaxStack: 1
-  Icon: {fileID: 21300000, guid: 57e7d836ef19d6745aa5eeae3dd5488e, type: 3}
-  BuyPrice: 7
-  SellPrice: 1
-  state:
-  - name: damage
-    type: 0
-    isInt: 1
-    amount: 2
-  EquipmentType: 4
-  Properties:
-    Name: 
-    Id: 0
-    Type: 15
-  Model: {fileID: 9018434352457198942, guid: 2b1ed7bac72515746b312741f393e69d, type: 3}
 --- !u!1001 &2114345127519040245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29292,22 +29299,22 @@ PrefabInstance:
     - target: {fileID: 2038022931250225717, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 301.7459
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2038022931250225717, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2038022931250225717, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2038022931250225717, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -418.2587
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2038022931250225717, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
@@ -29332,22 +29339,22 @@ PrefabInstance:
     - target: {fileID: 2739107695117514777, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 301.7459
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2739107695117514777, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2739107695117514777, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2739107695117514777, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -485.914
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2739107695117514777, guid: 7ffe4f2b5ff0f1c4f8a1028cb158f358,
         type: 3}
