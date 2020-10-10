@@ -510,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterState: {fileID: 11400000, guid: 6cc872d1e08cf7045a6c1883555c4050, type: 2}
   m_StateUi: {fileID: 0}
-  m_PlayerCombat: {fileID: 0}
+  m_PlayerCombat: {fileID: 130342471925132979}
 --- !u!114 &5914935209385737712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,6 +556,7 @@ MonoBehaviour:
   TargetLayer:
     serializedVersion: 2
     m_Bits: 1024
+  attackSpeed: 0
   healthSlider: {fileID: 0}
   energySlider: {fileID: 0}
 --- !u!1 &473765346730095357
@@ -1032,7 +1033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474930186898755394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.579, y: 0, z: 0}
+  m_LocalPosition: {x: 0.55, y: 0.067, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 475453110423241767}
@@ -1548,7 +1549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3077596975506097957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 0.407, z: 0}
+  m_LocalPosition: {x: 0.083, y: 0.389, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 475453110423241767}
