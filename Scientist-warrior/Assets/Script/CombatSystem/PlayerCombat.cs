@@ -15,13 +15,14 @@ namespace Script.CombatSystem
             m_AttackState = StateManager.Instance.characterState.states.Find(state => state.type == StateType.Damage);
             m_MaxHealth = StateManager.Instance.characterState.states.Find(state => state.type == StateType.MaxHealth);
             m_MaxEnergy = StateManager.Instance.characterState.states.Find(state => state.type == StateType.MaxEnergy);
+            CurrentChange();
         }
 
         private void Update()
         {
             if (CrossPlatformInputManager.GetButtonDown("Fire1"))
             {
-                Debug.Log("PlayerCombat---> fire 1");
+//                Debug.Log("PlayerCombat---> fire 1");
                 Attack();
             }
         }
@@ -38,10 +39,10 @@ namespace Script.CombatSystem
 
         public void RefreshSliders()
         {
-            healthSlider.CurrentAmount = CurrentHealth;
             healthSlider.MaxAmount = m_MaxHealth.amount;
-            energySlider.CurrentAmount = CurrentEnergy;
             energySlider.MaxAmount = m_MaxEnergy.amount;
+            healthSlider.CurrentAmount = CurrentHealth;
+            energySlider.CurrentAmount = CurrentEnergy;
         }
 
         public void CurrentChange(int energy = 0, int health = 0)
@@ -52,6 +53,7 @@ namespace Script.CombatSystem
                 CurrentHealth = (int) m_MaxHealth.amount;
             if (CurrentEnergy > m_MaxEnergy.amount)
                 CurrentEnergy = (int) m_MaxEnergy.amount;
+            RefreshSliders();
         }
 
         public override void GetDamage(int damage)
