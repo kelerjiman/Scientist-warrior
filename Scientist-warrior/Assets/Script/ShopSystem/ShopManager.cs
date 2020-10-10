@@ -22,7 +22,7 @@ namespace Script.ShopSystem
         private void InventoryOnOnRightClickEvent(ItemSlot itemSlot)
         {
             Debug.Log("shop manager");
-            if (m_ShopUi.Buy)
+            if (m_ShopUi.Buy || !m_ShopUi.gameObject.activeSelf)
                 return;
             ShopItem newShopItem = new ShopItem
             {
