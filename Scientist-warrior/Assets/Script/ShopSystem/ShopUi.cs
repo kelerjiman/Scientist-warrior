@@ -37,9 +37,21 @@ namespace Script.ShopSystem
             TabButtonEvent(ButtonType.Buy);
         }
 
+        private void OnEnable()
+        {
+            TabButtonEvent(ButtonType.Buy);
+        }
+
+        private void OnDisable()
+        {
+            Sell = false;
+            Buy = false;
+            ShopManager.Instance.SellWindowActive = Sell;
+        }
+
         private void TabButtonEvent(ButtonType type)
         {
-            Debug.Log("TabButton On ShopUi");
+//            Debug.Log("TabButton On ShopUi");
             if (type == ButtonType.Buy)
             {
                 Buy = true;
