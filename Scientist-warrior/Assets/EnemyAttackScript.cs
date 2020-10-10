@@ -51,7 +51,6 @@ public class EnemyAttackScript : MonoBehaviour, Health
             }
         }
     }
-
     private Health m_Playerhealth;
     private static readonly int Attack = Animator.StringToHash("Attack");
 
