@@ -178,7 +178,7 @@ namespace Script.InventorySystem
 
         private void Onclick(ItemSlot itemSlot)
         {
-            if(ShopManager.Instance.SellWindowActive)
+            if(ShopManager.Instance.SellWindowActive )
                 return;
             //for equip item slot
             if (itemSlot as EquipmentSlot)
