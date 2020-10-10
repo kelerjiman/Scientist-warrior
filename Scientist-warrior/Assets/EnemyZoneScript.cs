@@ -9,9 +9,8 @@ public class EnemyZoneScript : MonoBehaviour
     [SerializeField] private Transform EnemyVisual;
     [SerializeField] float speed;
     [SerializeField] private Vector2 DefaultPosition = Vector2.zero, localTransform, Target;
-    private bool playerInSight = false;
+    public bool playerInSight = false;
     [Range(-1, 1)] [SerializeField] private int LookDirection = 1;
-
     private static readonly int State = Animator.StringToHash("State");
 
     private void OnTriggerEnter2D(Collider2D other)
