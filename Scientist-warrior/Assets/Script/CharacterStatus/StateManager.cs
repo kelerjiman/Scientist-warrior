@@ -26,7 +26,7 @@ namespace Script.CharacterStatus
                 m_StateUi.AddState(state);
             }
             characterState.Add(obj);
-            m_PlayerCombat.RefreshSliders();
+            m_PlayerCombat.CurrentChange();
         }
 
         public void RemoveState(List<State> obj)
@@ -37,7 +37,7 @@ namespace Script.CharacterStatus
                 m_StateUi.RemoveState(state);
             }
             characterState.Remove(obj);
-            m_PlayerCombat.RefreshSliders();
+            m_PlayerCombat.CurrentChange();
         }
     }
 }
