@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Golden Chest
+  m_Name: Common Shield
   m_EditorClassIdentifier: 
-  id: 25679
-  ItemName: Golden Chest
+  id: 33038
+  ItemName: Common Shield
   MaxStack: 1
-  Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
-  BuyPrice: 35
+  Icon: {fileID: 21300000, guid: 30963ea85de0e95438136e1cc9241bcb, type: 3}
+  BuyPrice: 2
   SellPrice: 1
   state:
   - name: 
-    type: 2
+    type: 1
     isInt: 0
-    amount: 10
-  EquipmentType: 1
+    amount: 8
+  EquipmentType: 2
   Properties:
     Name: 
     Id: 0
-    Type: 8
-  Model: {fileID: 748892064072856285, guid: bd6178cbb8a897f409a93e6aa3bc03a5, type: 3}
+    Type: 14
+  Model: {fileID: 5292568056801544144, guid: a3c136b5b23c4df43958a1a32ada4d98, type: 3}

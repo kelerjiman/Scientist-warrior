@@ -109,12 +109,25 @@
             </e>
           </e>
         </e>
-        <e p="DialogCanvas.cs" t="Include" />
+        <e p="AnimationController.cs" t="Include" />
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
         <e p="EnemyAttackScript.cs" t="Include" />
         <e p="EnemyZoneScript.cs" t="Include" />
         <e p="EventManager.cs" t="Include" />
         <e p="Health.cs" t="Include" />
-        <e p="InformationBoxScript.cs" t="Include" />
         <e p="InputButton.cs" t="Include" />
         <e p="ItemDestroyPanel.cs" t="Include" />
         <e p="MovementScript.cs" t="Include" />
@@ -128,10 +141,16 @@
           <e p="CharacterStatus" t="Include">
             <e p="CharacterState.cs" t="Include" />
             <e p="IStateUI.cs" t="Include" />
-            <e p="StateDisplay.cs" t="Include" />
             <e p="StateManager.cs" t="Include" />
             <e p="StateSlot.cs" t="Include" />
             <e p="StateUI.cs" t="Include" />
+          </e>
+          <e p="CombatSystem" t="Include">
+            <e p="AttackPointer.cs" t="Include" />
+            <e p="CombatBase.cs" t="Include" />
+            <e p="EnemyCombat.cs" t="Include" />
+            <e p="IInteractable.cs" t="Include" />
+            <e p="PlayerCombat.cs" t="Include" />
           </e>
           <e p="CraftingSystem" t="Include">
             <e p="BaseCraftingWindow.cs" t="Include" />
@@ -141,6 +160,15 @@
             <e p="CraftingRecipe.cs" t="Include" />
             <e p="CraftingRecipeUi.cs" t="Include" />
           </e>
+          <e p="DialogSystem" t="Include">
+            <e p="Dialog.cs" t="Include" />
+            <e p="DialogManager.cs" t="Include" />
+            <e p="DialogPlaceHolder.cs" t="Include" />
+            <e p="DialogSender.cs" t="Include" />
+            <e p="DialogUI.cs" t="Include" />
+            <e p="SenderBase.cs" t="Include" />
+          </e>
+          <e p="GameManager.cs" t="Include" />
           <e p="InventorySystem" t="Include">
             <e p="EquipableItem.cs" t="Include" />
             <e p="EquipmentPanel.cs" t="Include" />
@@ -153,6 +181,8 @@
             <e p="ItemSlot.cs" t="Include" />
             <e p="UseableItem.cs" t="Include" />
           </e>
+          <e p="MovementBase.cs" t="Include" />
+          <e p="Projectile.cs" t="Include" />
           <e p="QuestSystem" t="Include">
             <e p="InWorldQuestTarget.cs" t="Include" />
             <e p="Npc.cs" t="Include" />
@@ -167,7 +197,20 @@
             <e p="QuestUI.cs" t="Include" />
             <e p="Visitor.cs" t="Include" />
           </e>
+          <e p="ShopSystem" t="Include">
+            <e p="CurrencyManager.cs" t="Include" />
+            <e p="InWorldShop.cs" t="Include" />
+            <e p="Price.cs" t="Include" />
+            <e p="ShopItem.cs" t="Include" />
+            <e p="ShopItemSlot.cs" t="Include" />
+            <e p="ShopManager.cs" t="Include" />
+            <e p="ShopUi.cs" t="Include" />
+            <e p="ShopUiTab.cs" t="Include" />
+            <e p="TabButton.cs" t="Include" />
+          </e>
         </e>
+        <e p="SliderScript.cs" t="Include" />
+        <e p="SpriteResorter.cs" t="Include" />
         <e p="Sprites" t="Include">
           <e p="animations.txt" t="Include" />
         </e>
@@ -201,6 +244,34 @@
             <e p="textures" t="Include">
               <e p="x.xml" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
         <e p="TileMapTest.cs" t="Include" />

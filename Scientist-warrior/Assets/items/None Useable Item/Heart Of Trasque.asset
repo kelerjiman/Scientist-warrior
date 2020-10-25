@@ -9,16 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8303e05febdc73642aecba51cf262e0c, type: 3}
-  m_Name: Health Potion - Useable
+  m_Script: {fileID: 11500000, guid: c8844bf6ca0d75f4395ace78fd490b10, type: 3}
+  m_Name: Heart Of Trasque
   m_EditorClassIdentifier: 
-  id: 88488
-  ItemName: Health Potion
-  MaxStack: 10
-  Icon: {fileID: 21300000, guid: 3cdd8fc58518c9141a09ebcaba22b399, type: 3}
+  id: 37681
+  ItemName: Heart of Trasque
+  MaxStack: 15
+  Icon: {fileID: 21300000, guid: 1f0e690825e255348bb060c772041ad9, type: 3}
   BuyPrice: 1
   SellPrice: 1
-  Type: 1
-  useableAmount: 5
-  Energy: 1
-  Health: 1

@@ -10,26 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
-  m_Name: Trinket
+  m_Name: Golden Chest
   m_EditorClassIdentifier: 
-  id: 90460
-  ItemName: Trinket
-  MaxStack: 2
-  Icon: {fileID: 21300000, guid: 3b2300f3442e7fe42a459b1228d480c5, type: 3}
-  BuyPrice: 6
+  id: 27363
+  ItemName: Golden Chest
+  MaxStack: 1
+  Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
+  BuyPrice: 35
   SellPrice: 1
   state:
   - name: 
-    type: 4
-    isInt: 1
-    amount: 1
-  - name: 
-    type: 5
-    isInt: 1
-    amount: 5
-  EquipmentType: 7
+    type: 2
+    isInt: 0
+    amount: 10
+  EquipmentType: 1
   Properties:
     Name: 
     Id: 0
-    Type: 0
-  Model: {fileID: 0}
+    Type: 8
+  Model: {fileID: 748892064072856285, guid: bd6178cbb8a897f409a93e6aa3bc03a5, type: 3}
