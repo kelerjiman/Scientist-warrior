@@ -65,9 +65,10 @@ namespace Script.DialogSystem
             else
             {
                 m_CurrentSender.dialog.m_EndDialog = true;
-                if (CurrentSender.senderQuest != null && CurrentSender.senderQuest.InWorldQuestTarget != null)
+                if (CurrentSender.Quest != null && CurrentSender.Quest.InWorldQuestTarget != null)
                 {
-                    QuestManager.Instance.QuestUi.SetData(CurrentSender.senderQuest);
+                    QuestManager.Instance.QuestUi.SetData(CurrentSender.Quest);
+                    
                     QuestManager.Instance.QuestUi.ToggleVisual(true);
                 }
                 CurrentSender = null;
