@@ -15,8 +15,9 @@ namespace Script.QuestSystem
     [Serializable]
     public class Quest
     {
+        public string name;
         public int questId;
-        public String name;
+
         [TextArea] public string description;
         public int order = -1;
         public List<Node> dependencies;
@@ -41,7 +42,7 @@ namespace Script.QuestSystem
                         {
                             for (int i = 0; i < amount; i++)
                             {
-                                InventoryManager.Instance.inventory.RemoveItem(((QuestItem) InWorldQuestTarget).Item);
+                                InventoryManager.Instance.inventory.RemoveItem(((QuestItem)InWorldQuestTarget).Item);
                             }
                         }
                         Status = QuestStatus.Compelete;
@@ -58,7 +59,7 @@ namespace Script.QuestSystem
             {
                 Debug.Log(item.ItemName);
                 inventory.AddItem(item);
-//                (inventory as Inventory)?.AddItemEvent?.Invoke(item);
+                //                (inventory as Inventory)?.AddItemEvent?.Invoke(item);
             }
 
             return true;
