@@ -1,6 +1,8 @@
 ﻿using Script.CharacterStatus;
+using Script.InventorySystem;
+using Unity.Mathematics;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
+using Standard_Assets.CrossPlatformInput.Scripts;
 
 namespace Script.CombatSystem
 {
@@ -10,32 +12,70 @@ namespace Script.CombatSystem
         private State m_AttackState, m_MaxHealth, m_MaxEnergy;
         [SerializeField] private SliderScript healthSlider;
         [SerializeField] private SliderScript energySlider;
+        [SerializeField] private Transform ProjectilePlaceHolder;
+        [SerializeField] private ParicalScript Partical;
+        [SerializeField] private GameObject playerVisual;
+        InventoryManager inventoryManager;
+        Projectile CurrentProjectile;
         private void Start()
         {
+
+            inventoryManager = InventoryManager.Instance;
+            inventoryManager.equipmentPanel.OnAddItemEvent += GetWeapon_OnAddItemEvent;
             m_AttackState = StateManager.Instance.characterState.states.Find(state => state.type == StateType.Damage);
             m_MaxHealth = StateManager.Instance.characterState.states.Find(state => state.type == StateType.MaxHealth);
             m_MaxEnergy = StateManager.Instance.characterState.states.Find(state => state.type == StateType.MaxEnergy);
             CurrentChange();
         }
 
-        private void Update()
+        private void GetWeapon_OnAddItemEvent(EquipableItem obj)
         {
-            if (CrossPlatformInputManager.GetButtonDown("Fire1"))
+            if (obj.Properties.Type == BodyPartType.Weapon)
             {
-//                Debug.Log("PlayerCombat---> fire 1");
-                Attack();
+                if (obj.EquipmentType == EquipmentType.Range)
+                {
+
+                    CurrentProjectile = ((Weapon)obj).projectile;
+                }
+                else
+                    CurrentProjectile = null;
             }
         }
 
-        void Attack()
+        private void Update()
         {
-            m_Tragets = Physics2D.OverlapCircleAll(AttackPoint.position, Radius, TargetLayer);
-            foreach (var target in m_Tragets)
+            if (CurrentHealth <= 0)
             {
-                    Debug.Log("this is the target" + target.name);
-                    target.GetComponent<IINteractable>().GetDamage((int) m_AttackState.amount);
+                playerVisual.SetActive(false);
+                Instantiate(Partical, playerVisual.transform.position, quaternion.identity);
+                return;
+            }
+            if (CrossPlatformInputManager.GetButtonDown("Fire1"))
+            {
+                Attack();
             }
         }
+        void Attack()
+        {
+            if (CurrentProjectile == null)
+            {
+                m_Tragets = Physics2D.OverlapCircleAll(AttackPoint.position, Radius, TargetLayer);
+                foreach (var target in m_Tragets)
+                {
+                    Debug.Log("this is the target" + target.name);
+                    target.GetComponent<IINteractable>().GetDamage((int)m_AttackState.amount);
+                }
+            }
+            else
+            {
+                var projectile = Instantiate(CurrentProjectile, ProjectilePlaceHolder.position, quaternion.identity);
+                projectile.damage += (int)StateManager.Instance.characterState.states.Find(s => s.type == StateType.Damage).amount;
+                if (Mathf.Sign(projectile.velocity.x) != Mathf.Sign(transform.localScale.x))
+                    projectile.velocity.x *= -1;
+
+            }
+        }
+
 
         public void RefreshSliders()
         {
@@ -50,9 +90,9 @@ namespace Script.CombatSystem
             CurrentHealth += health;
             CurrentEnergy += energy;
             if (CurrentHealth > m_MaxHealth.amount)
-                CurrentHealth = (int) m_MaxHealth.amount;
+                CurrentHealth = (int)m_MaxHealth.amount;
             if (CurrentEnergy > m_MaxEnergy.amount)
-                CurrentEnergy = (int) m_MaxEnergy.amount;
+                CurrentEnergy = (int)m_MaxEnergy.amount;
             RefreshSliders();
         }
 
