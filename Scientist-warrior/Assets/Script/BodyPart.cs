@@ -5,16 +5,24 @@ using Random = UnityEngine.Random;
 
 public class BodyPart : MonoBehaviour
 {
-    [FormerlySerializedAs("DefaultModel")] public GameObject defaultModel;
-    public GameObject CurrentModel;
+    [FormerlySerializedAs("DefaultModel")] public SpriteRenderer ModelHolder;
+    private Sprite defalutModel;
     public BodyPartProp Properties;
 
     private void Start()
     {
         Properties.Id = Random.Range(0, 10000);
         Properties.Name = Properties.Type.ToString();
-        defaultModel = GetComponentInChildren<SpriteRenderer>().gameObject;
-        CurrentModel = defaultModel;
+        ModelHolder = GetComponentInChildren<SpriteRenderer>();
+        defalutModel = ModelHolder.sprite;
+    }
+    public void ResetModel()
+    {
+        ModelHolder.sprite = defalutModel;
+    }
+    public void setModel(EquipableItem item)
+    {
+        ModelHolder.sprite = item.Model.GetComponent<SpriteRenderer>().sprite;
     }
 }
 
