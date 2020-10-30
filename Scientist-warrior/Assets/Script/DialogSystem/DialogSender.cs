@@ -7,18 +7,22 @@ namespace Script.DialogSystem
     public class DialogSender : SenderBase
     {
         [SerializeField] public Dialog dialog;
+        //public ObjectSpawner[] spawner;
 
         private void Start()
         {
-            senderQuest.questId = Random.Range(0, 100000000);
+            if (Quest.questId == 0)
+                Quest.questId = Random.Range(0, 100000000);
         }
 
-        [Space] [Header("-------------")] [SerializeField]
-        public Quest senderQuest;
+        [Space]
+        [Header("-------------")]
+        [SerializeField]
+        public Quest Quest;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Player"))
+            if (other.CompareTag("Player") && Quest.Status != QuestStatus.Compelete)
                 DialogManager.Instance.dialogUi.GetData(this);
         }
 
@@ -26,7 +30,7 @@ namespace Script.DialogSystem
         {
             if (other.CompareTag("Player"))
             {
-                if (senderQuest != null && senderQuest.InWorldQuestTarget != null)
+                if (Quest != null && Quest.InWorldQuestTarget != null)
                 {
                     QuestManager.Instance.QuestUi.ToggleVisual(false);
                 }
