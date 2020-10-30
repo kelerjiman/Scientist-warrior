@@ -12,7 +12,7 @@ namespace Script.CharacterStatus
         
         public PlayerCombat m_PlayerCombat;
         public static StateManager Instance;
-        void Start()
+        void Awake()
         {
             characterState.restore();
             Instance = this;
