@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Script.CharacterStatus;
+using Script.InventorySystem;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -15,8 +16,9 @@ public class EquipmentPanel : MonoBehaviour, IDropHandler
     public event Action<ItemSlot> OnDragEvent;
     public event Action<ItemSlot> OnEndDragEvent;
     public event Action<ItemSlot> OnDropEvent;
+    public event Action<EquipableItem> OnAddItemEvent;
+    public event Action<EquipableItem> OnRemoveItemEvent;
     public event Action OnDropVoidEvent;
-
     private void Start()
     {
         for (int i = 0; i < EquipmentSlots.Length; i++)
@@ -38,14 +40,23 @@ public class EquipmentPanel : MonoBehaviour, IDropHandler
     {
         for (int i = 0; i < EquipmentSlots.Length; i++)
         {
-            if (EquipmentSlots[i].equipmentType == (item.Item as EquipableItem)?.EquipmentType)
+            if (EquipmentSlots[i].CanRecieveItem(item.Item))
             {
-                PreviousItem = (EquipableItem) EquipmentSlots[i].Item;
+                PreviousItem = (EquipableItem)EquipmentSlots[i].Item;
                 amount = EquipmentSlots[i].Amount;
                 EquipmentSlots[i].Item = item.Item;
                 EquipmentSlots[i].Amount = item.Amount;
+                OnAddItemEvent?.Invoke((EquipableItem)EquipmentSlots[i].Item);
                 return true;
             }
+            //if (EquipmentSlots[i].equipmentType == (item.Item as EquipableItem)?.EquipmentType)
+            //{
+            //    PreviousItem = (EquipableItem) EquipmentSlots[i].Item;
+            //    amount = EquipmentSlots[i].Amount;
+            //    EquipmentSlots[i].Item = item.Item;
+            //    EquipmentSlots[i].Amount = item.Amount;
+            //    return true;
+            //}
         }
 
         PreviousItem = null;
@@ -61,6 +72,7 @@ public class EquipmentPanel : MonoBehaviour, IDropHandler
             {
 //                CharacterScript.Instance.characterState.Remove(item.state);
                 PlayerVisualScript.Instance.RemoveItemVisual(item);
+                OnRemoveItemEvent?.Invoke(item);
                 EquipmentSlots[i].Item = null;
                 return true;
             }
