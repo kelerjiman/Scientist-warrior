@@ -6,7 +6,9 @@ namespace Script.CombatSystem
 {
     public class EnemyCombat : CombatBase
     {
-        [Space(30)] [Header("EnemyCombat")] [SerializeField]
+        [Space(30)]
+        [Header("EnemyCombat")]
+        [SerializeField]
         private Transform visual;
         [SerializeField] private Animator m_Animator;
         [SerializeField] private int moveSpeed = 1;
@@ -16,32 +18,15 @@ namespace Script.CombatSystem
         [SerializeField] private SliderScript healthSlider;
         [SerializeField] private SliderScript energySlider;
         [SerializeField] private GameObject Partical;
+        private Vector2 m_DefPos;
+        private Collider2D m_Target, m_AttackAreaTarget;
+        private AnimationController m_Ac;
         public Collider2D Target
         {
             get { return m_Target; }
             set { m_Target = value; }
         }
-        public bool AnyDetect
-        {
-            get { return m_AnyDetect; }
-            set
-            {
-                m_AnyDetect = value;
-                if (m_AnyDetect)
-                {
-                }
-                else
-                {
-                    MoveToTarget(m_AttackAreaTarget.gameObject.transform.position);
-//                    m_Ac.Move(m_AttackAreaTarget.gameObject.transform.position, moveSpeed);
-                }
-            }
-        }
-//      private Collider2D[] m_Tragets, AttackAreaTargets;
-        private Vector2 m_DefPos;
-        private Collider2D m_Target, m_AttackAreaTarget;
-        private AnimationController m_Ac;
-        private bool m_TimeToAttack, m_AnyDetect = false;
+        private bool m_TimeToAttack = false;
 
 
         private void Start()
@@ -64,32 +49,38 @@ namespace Script.CombatSystem
             m_AttackAreaTarget = Physics2D.OverlapCircle(attackArea.position, attackAreaRadius, TargetLayer);
             if (m_AttackAreaTarget != null)
             {
-                Attack();
-                m_AnyDetect = true;
                 if (!m_TimeToAttack)
                     MoveToTarget(m_AttackAreaTarget.gameObject.transform.position);
-                
+
             }
             else
             {
-                m_AnyDetect = false;
                 MoveToTarget(m_DefPos);
-                
+                m_TimeToAttack = false;
             }
+            Attack();
         }
 
         void Attack()
         {
-            m_Target = Physics2D.OverlapCircle(AttackPoint.position, Radius, TargetLayer);
-            if (m_Target != null)
+            Target = Physics2D.OverlapCircle(AttackPoint.position, Radius, TargetLayer);
+            if (Target != null)
             {
                 m_TimeToAttack = true;
+
             }
             else
-                m_TimeToAttack = false;
+            {
 
-            
+                m_TimeToAttack = false;
+            }
             m_Ac.PlayAttackAnimation(m_TimeToAttack);
+
+        }
+        public void NextAttack()
+        {
+            if (Target != null)
+                Target.GetComponent<IINteractable>().GetDamage(damage);
         }
 
         //Move is correct dont Touch it any More
@@ -140,7 +131,7 @@ namespace Script.CombatSystem
         void Die()
         {
             m_Ac.PlayDieAnimation();
-            Instantiate(Partical).transform.position=gameObject.transform.position;
+            Instantiate(Partical).transform.position = gameObject.transform.position;
             Destroy(gameObject.transform.parent.gameObject);
         }
 
