@@ -9,7 +9,7 @@ namespace Script.InventorySystem
     {
         [SerializeField] public CanvasRenderer ItemChestUI;
         [SerializeField] public Inventory inventory;
-        [SerializeField] private EquipmentPanel equipmentPanel;
+        [SerializeField] public EquipmentPanel equipmentPanel;
         [SerializeField] private BaseCraftingWindow craftingWindow;
         [SerializeField] private Image DragableItem;
         [SerializeField] private ItemDestroyPanel m_ItemDestroyPanel;
