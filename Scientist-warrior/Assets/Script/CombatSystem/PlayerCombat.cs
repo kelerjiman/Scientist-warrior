@@ -30,7 +30,7 @@ namespace Script.CombatSystem
 
         private void GetWeapon_OnAddItemEvent(EquipableItem obj)
         {
-            if (obj.Properties.Type == BodyPartType.Weapon)
+            if (obj.BodyPartType == BodyPartType.Weapon)
             {
                 if (obj.EquipmentType == EquipmentType.Range)
                 {
@@ -62,7 +62,7 @@ namespace Script.CombatSystem
                 m_Tragets = Physics2D.OverlapCircleAll(AttackPoint.position, Radius, TargetLayer);
                 foreach (var target in m_Tragets)
                 {
-                    Debug.Log("this is the target" + target.name);
+                    //Debug.Log("this is the target" + target.name);
                     target.GetComponent<IINteractable>().GetDamage((int)m_AttackState.amount);
                 }
             }
@@ -71,7 +71,12 @@ namespace Script.CombatSystem
                 var projectile = Instantiate(CurrentProjectile, ProjectilePlaceHolder.position, quaternion.identity);
                 projectile.damage += (int)StateManager.Instance.characterState.states.Find(s => s.type == StateType.Damage).amount;
                 if (Mathf.Sign(projectile.velocity.x) != Mathf.Sign(transform.localScale.x))
+                {
+                    var localScale = projectile.transform.localScale;
+                    localScale.x *= -1;
+                    projectile.transform.localScale = localScale;
                     projectile.velocity.x *= -1;
+                }
 
             }
         }
