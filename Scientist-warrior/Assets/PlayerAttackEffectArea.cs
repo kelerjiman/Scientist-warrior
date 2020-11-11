@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
+using Standard_Assets.CrossPlatformInput.Scripts;
 
 public class PlayerAttackEffectArea : MonoBehaviour
 {
