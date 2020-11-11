@@ -1,4 +1,6 @@
-﻿using System;
+﻿using JetBrains.Annotations;
+using Script.QuestSystem;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -21,6 +23,7 @@ namespace Script.CombatSystem
         private Vector2 m_DefPos;
         private Collider2D m_Target, m_AttackAreaTarget;
         private AnimationController m_Ac;
+        private Npc Parent;
         public Collider2D Target
         {
             get { return m_Target; }
@@ -31,13 +34,20 @@ namespace Script.CombatSystem
 
         private void Start()
         {
+            Parent = transform.parent.GetComponent<Npc>();
+            Parent.ReviveEvent += Revive;
             m_Ac = new AnimationController(m_Animator);
             m_DefPos = transform.position;
+            MaxEnergy = CurrentEnergy;
+            MaxHealth = CurrentHealth;
             if (energySlider != null)
-                energySlider.MaxAmount = CurrentEnergy;
+                energySlider.MaxAmount = MaxEnergy;
             if (healthSlider != null)
-                healthSlider.MaxAmount = CurrentHealth;
+                healthSlider.MaxAmount = MaxHealth;
+
         }
+
+
 
         private void Update()
         {
@@ -113,16 +123,13 @@ namespace Script.CombatSystem
             m_Ac.PlayHitAnimation();
             base.GetDamage(damage);
             RefreshSliders();
+            if (CurrentHealth == 0)
+                Die();
         }
 
         public void RefreshSliders()
         {
             healthSlider.CurrentAmount = CurrentHealth;
-            if (CurrentHealth <= 0)
-            {
-                Die();
-            }
-
             if (energySlider == null)
                 return;
             energySlider.CurrentAmount = CurrentEnergy;
@@ -132,7 +139,15 @@ namespace Script.CombatSystem
         {
             m_Ac.PlayDieAnimation();
             Instantiate(Partical).transform.position = gameObject.transform.position;
-            Destroy(gameObject.transform.parent.gameObject);
+            Parent.Die(transform);
+            //Destroy(gameObject.transform.parent.gameObject);
+            //TODO be in fekr shavad ke enemy destroy nashavad va faghat disable shavad marateb : 1- enemy ref (NPC) 2-EnemyCombat
+        }
+        private void Revive()
+        {
+            CurrentEnergy = MaxEnergy;
+            CurrentHealth = MaxHealth;
+            RefreshSliders();
         }
 
         private void OnDrawGizmosSelected()
