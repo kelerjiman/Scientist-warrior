@@ -16,7 +16,7 @@ MonoBehaviour:
   - name: Max Health
     type: 2
     isInt: 0
-    amount: 11
+    amount: 1
   - name: Max Energy
     type: 3
     isInt: 0
@@ -29,11 +29,11 @@ MonoBehaviour:
     type: 0
     isInt: 1
     amount: 1
-  - name: Heat Resistance
+  - name: Heat Resist
     type: 5
     isInt: 0
     amount: 1
-  - name: Cold Resistance
+  - name: Cold Resist
     type: 4
     isInt: 0
     amount: 1
