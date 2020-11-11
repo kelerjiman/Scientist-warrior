@@ -16,6 +16,7 @@ public class ChestInWorld : MonoBehaviour
     [SerializeField] private ItemChestUI chestUi;
 
     [SerializeField] public List<ItemProp> itemProps;
+    [SerializeField] int LifeCycle = 5;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class ChestInWorld : MonoBehaviour
             if (itemProp.item.MaxStack < itemProp.amount)
                 itemProp.amount = itemProp.item.MaxStack;
         }
+        Destroy(gameObject, LifeCycle);
     }
 
     private void Update()
