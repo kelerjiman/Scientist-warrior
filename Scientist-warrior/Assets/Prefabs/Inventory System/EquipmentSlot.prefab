@@ -142,7 +142,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1314900600525261491, guid: e4dfef3835434a943825371665a13923,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2.5
 --- !u!1 &3900659867072963364
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,8 +190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.26, y: 183.84}
-  m_SizeDelta: {x: 65.54425, y: 50.39209}
+  m_AnchoredPosition: {x: -35.26, y: 176.38}
+  m_SizeDelta: {x: 65.54425, y: 65.31598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3900659867072963360
 CanvasRenderer:
@@ -245,4 +246,4 @@ MonoBehaviour:
   amountText: {fileID: 6554306369682253971}
   m_Item: {fileID: 0}
   m_Amount: 0
-  equipmentType: 7
+  EquipmentType: 0

@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4866335099703150067
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4674648414393337457, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: QuestTarget.TargetId
+      value: 5858
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506249180190705, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506249180190706, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc5239d2ffa870a4f89b9ddfbf0d24f6,
+        type: 3}
+    - target: {fileID: 7972506249180190707, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506249180190707, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506249180190707, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.9949703
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.106555
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665908, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665913, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Dragon testy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972506250594665913, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a4d832485c4d9b4e9c1ea694902fe31, type: 3}

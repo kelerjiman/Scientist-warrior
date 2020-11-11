@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4321176917490957305}
   - component: {fileID: 4321176917490957307}
   - component: {fileID: 4321176917490957306}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,9 +96,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4321176917650662583}
   - component: {fileID: 4321176917650662582}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CameraConfiner
-  m_TagString: Untagged
+  m_TagString: Other
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 4321176919280254153}
   - component: {fileID: 4321176919280254152}
   - component: {fileID: 4321176919280254155}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 4321176919349386804}
   - component: {fileID: 4321176919349386795}
   - component: {fileID: 4321176919349386805}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CM vcam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4321176919403385183}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CameraHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

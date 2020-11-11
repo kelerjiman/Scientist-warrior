@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 354252656933742629}
   - component: {fileID: 4862767650806041987}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: SliderCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,7 +279,7 @@ PrefabInstance:
     - target: {fileID: 3703652903152011895, guid: 820826b4514a73e43a43096699fc1133,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.09
+      value: 0.09000015
       objectReference: {fileID: 0}
     - target: {fileID: 3703652903152011895, guid: 820826b4514a73e43a43096699fc1133,
         type: 3}
