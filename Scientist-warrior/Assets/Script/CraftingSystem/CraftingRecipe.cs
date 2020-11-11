@@ -40,16 +40,13 @@ namespace Script
                     {
                         /*Item oldItem =*/
                         itemContainer.RemoveItem(itemAmount.item.Id);
-//                        if (oldItem != null)
-//                            oldItem.Destroy();
+                        //                        if (oldItem != null)
+                        //                            oldItem.Destroy();
                     }
                 }
 
-                for (int i = 0; i < resault.itemAmount; i++)
-                {
-                    itemContainer.AddItem(resault.item.GetCopy());
-                    (itemContainer as Inventory)?.AddItemEvent?.Invoke(resault.item);
-                }
+                itemContainer.AddItem(resault.item.GetCopy(), resault.itemAmount);
+                (itemContainer as Inventory)?.AddItemEvent?.Invoke(resault.item);
             }
         }
     }
