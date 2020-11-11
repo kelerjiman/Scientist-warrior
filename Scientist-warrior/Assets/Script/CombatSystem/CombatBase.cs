@@ -8,6 +8,8 @@ namespace Script.CombatSystem
         [Header("Base Combat")]
         [SerializeField] internal int CurrentHealth = 1;
         [SerializeField] internal int CurrentEnergy = 1;
+        [SerializeField] internal int MaxHealth = 1;
+        [SerializeField] internal int MaxEnergy = 1;
         [SerializeField] internal Transform AttackPoint;
         [SerializeField] internal float Radius = 1;
         [SerializeField] internal LayerMask TargetLayer;
@@ -15,6 +17,8 @@ namespace Script.CombatSystem
         public virtual void GetDamage(int damage)
         {
             CurrentHealth -= damage;
+            if (CurrentHealth < 0)
+                CurrentHealth = 0;
         }
     }
 }
