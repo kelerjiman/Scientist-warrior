@@ -20,9 +20,11 @@ namespace Script.QuestSystem
                 if (m_Quest != null)
                 {
                     ToggleVisual(true);
-                    m_Quest.InWorldQuestTarget.quest = m_Quest;
+                    if (Quest.type == QuestType.Visiting)
+                        m_Quest.Visitor.quest = m_Quest;
+                    //TODO Quest Visitor ra be accept Button bebar
                     TrackingButton.interactable = true;
-                    
+
                     DismissButton.interactable = true;
                     for (int i = 0; i < RewardItemIconHParent.childCount; i++)
                     {
@@ -62,7 +64,7 @@ namespace Script.QuestSystem
                             TrackingButton.interactable = false;
                             DismissButton.interactable = false;
                         }
-                        
+
                     }
 
                     QuestTitle.text = m_Quest.name;
