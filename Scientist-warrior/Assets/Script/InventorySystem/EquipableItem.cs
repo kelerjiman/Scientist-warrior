@@ -15,7 +15,11 @@ public enum EquipmentType
     offHand,
     Range,
     Accessory1,
-    Accessory2
+    Accessory2,
+    Shoulder,
+    Legan,
+    TwoHand,
+    Staff
 }
 
 [CreateAssetMenu]
@@ -25,8 +29,11 @@ public class EquipableItem : Item
     [Header("Equipable Item Setting")]
     public List<State> state;
     [Space] public EquipmentType EquipmentType;
-    [Header("Visual Effect Attr")] public BodyPartProp Properties;
-    public GameObject Model;
+
+    //[Header("Visual Effect Attr")] public BodyPartProp Properties;
+    [Header("Visual Effect Attr")] public BodyPartType BodyPartType;
+    public Sprite Model;
+    public List<ChainedItem> ChainedItems;
     public override Item GetCopy()
     {
         return Instantiate(this);
@@ -35,5 +42,13 @@ public class EquipableItem : Item
     public override void Destroy()
     {
         Destroy(this);
+    }
+
+    [Serializable]
+    public class ChainedItem
+    {
+        public string Name;
+        public BodyPartType BodyPartType;
+        public Sprite Model;
     }
 }
