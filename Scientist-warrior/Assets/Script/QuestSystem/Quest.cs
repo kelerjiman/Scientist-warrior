@@ -24,7 +24,9 @@ namespace Script.QuestSystem
         public QuestStatus Status = QuestStatus.NotAccepted;
         [Space] public QuestRewards Rewards;
         [Space] public QuestType type;
-        public InWorldQuestTarget InWorldQuestTarget;
+        public Item QuestItem;
+        public Npc Npc;
+        public Visitor Visitor;
         [SerializeField] private int amount = 0;
 
         public int Amount
@@ -35,18 +37,11 @@ namespace Script.QuestSystem
                 amount = value;
                 if (amount >= MaxAmount)
                 {
-                    Status = QuestStatus.Done;
-                    if (GetRewards(InventoryManager.Instance.inventory))
-                    {
-                        if (type == QuestType.Gathering)
-                        {
-                            for (int i = 0; i < amount; i++)
-                            {
-                                InventoryManager.Instance.inventory.RemoveItem(((QuestItem)InWorldQuestTarget).Item);
-                            }
-                        }
-                        Status = QuestStatus.Compelete;
-                    }
+                    amount = MaxAmount;
+                    if (questId < 0)
+                        return;
+                    Status = QuestStatus.Compelete;
+
                 }
             }
         }
@@ -57,10 +52,15 @@ namespace Script.QuestSystem
         {
             foreach (var item in Rewards.items)
             {
-                Debug.Log(item.ItemName);
-                inventory.AddItem(item);
+                Debug.Log("GetRewards " + item.ItemName);
+                inventory.AddItem(item, 1);
                 //                (inventory as Inventory)?.AddItemEvent?.Invoke(item);
             }
+            if (type == QuestType.Gathering)
+            {
+                InventoryManager.Instance.inventory.RemoveItem(QuestItem, Amount);
+            }
+            Status = QuestStatus.Compelete;
 
             return true;
         }
