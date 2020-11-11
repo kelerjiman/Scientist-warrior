@@ -62,11 +62,12 @@ public class ItemChestUI : MonoBehaviour
         if (!Inventory.IsFull() && itemslot.Item != null)
         {
             if (itemslot.Amount > 0)
-                for (int i = 0; i < itemslot.Amount; i++)
-                {
-                    Inventory.AddItem(Instantiate(itemslot.Item.GetCopy()));
-                    Inventory.AddItemEvent?.Invoke(itemslot.Item);
-                }
+                Inventory.AddItem
+                    (
+                    Instantiate(itemslot.Item.GetCopy()),
+                    itemslot.Amount
+                    );
+            Inventory.AddItemEvent?.Invoke(itemslot.Item);
 
             ActiveChest.itemProps.Remove(ActiveChest.itemProps.Find(item => item.item == itemslot.Item));
             itemslot.Item = null;

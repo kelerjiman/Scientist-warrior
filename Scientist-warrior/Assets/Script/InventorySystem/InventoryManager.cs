@@ -26,10 +26,10 @@ namespace Script.InventorySystem
             inventory.OnRightClickEvent += Onclick;
             equipmentPanel.OnRightClickEvent += Onclick;
             //on Pointer Event Must be like that
-//            m_Inventory.OnPointerEnter += ShowTooltip;
-//            m_EquipmentPanel.OnPointerEnter += ShowToolTip;
-//            m_Inventory.OnPointerExit += HideTooltip;
-//            m_EquipmentPanel.OnPointerExit += HideToolTip;
+            //            m_Inventory.OnPointerEnter += ShowTooltip;
+            //            m_EquipmentPanel.OnPointerEnter += ShowToolTip;
+            //            m_Inventory.OnPointerExit += HideTooltip;
+            //            m_EquipmentPanel.OnPointerExit += HideToolTip;
             //On Begin Drag Event 
             inventory.OnBeginDragEvent += BeginDrag;
             equipmentPanel.OnBeginDragEvent += BeginDrag;
@@ -44,7 +44,7 @@ namespace Script.InventorySystem
             inventory.OnDropVoidEvent += Drop;
             equipmentPanel.OnDropEvent += Drop;
             equipmentPanel.OnDropVoidEvent += Drop;
-//        m_DropItemArea.OnDropEvent += DropItemOutSide;
+            //        m_DropItemArea.OnDropEvent += DropItemOutSide;
             //Crafting
             craftingWindow.CraftingRecipeHandler += Craft;
             Instance = this;
@@ -98,8 +98,8 @@ namespace Script.InventorySystem
             m_ItemDestroyPanel.OnYesButtonEvent += () =>
             {
                 if (itemSlot as EquipmentSlot != null)
-                    StateManager.Instance.RemoveState(((EquipableItem) targetItemSlot.Item).state);
-//            targetItemSlot.Item.Destroy();
+                    StateManager.Instance.RemoveState(((EquipableItem)targetItemSlot.Item).state);
+                //            targetItemSlot.Item.Destroy();
                 targetItemSlot.Item = null;
                 m_ItemDestroyPanel.Hide();
             };
@@ -121,14 +121,14 @@ namespace Script.InventorySystem
                 {
                     if (dropItemSlot.Item != null)
                     {
-                        StateManager.Instance.RemoveState(((EquipableItem) dropItemSlot.Item).state);
-                        PlayerVisualScript.Instance.RemoveItemVisual((EquipableItem) dropItemSlot.Item);
+                        StateManager.Instance.RemoveState(((EquipableItem)dropItemSlot.Item).state);
+                        PlayerVisualScript.Instance.RemoveItemVisual((EquipableItem)dropItemSlot.Item);
                     }
 
                     if (m_DraggedSlot.Item != null)
                     {
-                        StateManager.Instance.AddState(((EquipableItem) m_DraggedSlot.Item).state);
-                        PlayerVisualScript.Instance.SetItemVisual((EquipableItem) m_DraggedSlot.Item);
+                        StateManager.Instance.AddState(((EquipableItem)m_DraggedSlot.Item).state);
+                        PlayerVisualScript.Instance.SetItemVisual((EquipableItem)m_DraggedSlot.Item);
                     }
                 }
                 else
@@ -137,14 +137,14 @@ namespace Script.InventorySystem
                     {
                         if (dropItemSlot.Item != null)
                         {
-                            StateManager.Instance.AddState(((EquipableItem) dropItemSlot.Item).state);
-                            PlayerVisualScript.Instance.SetItemVisual((EquipableItem) dropItemSlot.Item);
+                            StateManager.Instance.AddState(((EquipableItem)dropItemSlot.Item).state);
+                            PlayerVisualScript.Instance.SetItemVisual((EquipableItem)dropItemSlot.Item);
                         }
 
                         if (m_DraggedSlot.Item != null)
                         {
-                            StateManager.Instance.RemoveState(((EquipableItem) m_DraggedSlot.Item).state);
-                            PlayerVisualScript.Instance.RemoveItemVisual((EquipableItem) m_DraggedSlot.Item);
+                            StateManager.Instance.RemoveState(((EquipableItem)m_DraggedSlot.Item).state);
+                            PlayerVisualScript.Instance.RemoveItemVisual((EquipableItem)m_DraggedSlot.Item);
                         }
                     }
                 }
@@ -178,27 +178,24 @@ namespace Script.InventorySystem
 
         private void Onclick(ItemSlot itemSlot)
         {
-            if(ShopManager.Instance.SellWindowActive )
+            if (ShopManager.Instance.SellWindowActive)
                 return;
-            //for equip item slot
-            if (itemSlot as EquipmentSlot)
+            //for Unequip item slot
+            if (itemSlot as EquipmentSlot && itemSlot.Item != null)
             {
                 if (!inventory.IsFull())
                 {
-                    for (int i = 0; i < itemSlot.Amount; i++)
-                    {
-                        inventory.AddItem(itemSlot.Item);
-                        inventory.AddItemEvent?.Invoke(itemSlot.Item);
-                    }
+                    inventory.AddItem(itemSlot.Item, itemSlot.Amount);
+                    inventory.AddItemEvent?.Invoke(itemSlot.Item);
 
-                    StateManager.Instance.RemoveState(((EquipableItem) itemSlot.Item).state);
-                    PlayerVisualScript.Instance.RemoveItemVisual((EquipableItem) itemSlot.Item);
+                    StateManager.Instance.RemoveState(((EquipableItem)itemSlot.Item).state);
+                    PlayerVisualScript.Instance.RemoveItemVisual((EquipableItem)itemSlot.Item);
                     equipmentPanel.RemoveItem(itemSlot.Item as EquipableItem);
                     itemSlot.Item = null;
                 }
             }
-            //for inventory slot
-            else if (itemSlot.Item as EquipableItem != null)
+            //for Equip Item Slot
+            else if (itemSlot.Item as EquipableItem != null && itemSlot.Item != null)
             {
                 EquipableItem previosItem;
                 int amount;
@@ -212,8 +209,8 @@ namespace Script.InventorySystem
 
                 if (itemSlot != null)
                 {
-                    StateManager.Instance.AddState(((EquipableItem) itemSlot.Item).state);
-                    PlayerVisualScript.Instance.SetItemVisual((EquipableItem) itemSlot.Item);
+                    StateManager.Instance.AddState(((EquipableItem)itemSlot.Item).state);
+                    PlayerVisualScript.Instance.SetItemVisual((EquipableItem)itemSlot.Item);
                 }
 
                 itemSlot.Item = previosItem;
@@ -223,7 +220,7 @@ namespace Script.InventorySystem
             else if (itemSlot.Item as UseableItem)
             {
                 if (itemSlot.Item.UseItem())
-                    inventory.RemoveItem(itemSlot.Item);
+                    inventory.RemoveItem(itemSlot.Item,1);
             }
         }
 

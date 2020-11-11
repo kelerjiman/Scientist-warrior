@@ -87,6 +87,37 @@ public class Inventory : MonoBehaviour, IItemContainer, IDropHandler
 //        AddItemEvent?.Invoke(item);
         return false;
     }
+    public bool AddItem(Item item,int amount)
+    {
+        foreach (var itemSlot in itemslots)
+            if (itemSlot.Item != null)
+                if (itemSlot.Item.Id == item.Id)
+                    if (itemSlot.Amount < itemSlot.Item.MaxStack)
+                    {
+                        int tempAmount = itemSlot.Item.MaxStack - (itemSlot.Amount + amount);
+                        if (tempAmount >= 0)
+                        {
+                            itemSlot.Amount += amount;
+                            return true;
+                        }
+                        else
+                        {
+                            itemSlot.Amount = itemSlot.Item.MaxStack;
+                            return AddItem(item, amount - itemSlot.Amount);
+                        }
+                    }
+
+        foreach (var itemSlot in itemslots)
+            if (itemSlot.Item == null)
+            {
+                itemSlot.Item = item;
+                itemSlot.Amount = amount;
+                return true;
+            }
+
+//        AddItemEvent?.Invoke(item);
+        return false;
+    }
 
 
     public bool RemoveItem(Item item)
