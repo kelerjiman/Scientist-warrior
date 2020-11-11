@@ -6,21 +6,21 @@ using UnityEngine;
 public class PlayerVisualScript : MonoBehaviour
 {
     public Transform BodyPartHolder;
-    public List<BodyPart> playerBodyParts;
+    public List<BodyPart2D> playerBodyParts;
     public static PlayerVisualScript Instance;
 
-    private void OnValidate()
-    {
-        if (playerBodyParts.Count <= 1)
-            foreach (var BodyPart in BodyPartHolder.GetComponentsInChildren<BodyPart>())
-            {
-                playerBodyParts.Add(BodyPart);
-            }
-    }
+    //private void OnValidate()
+    //{
+    //    if (playerBodyParts.Count <= 1)
+    //        foreach (var BodyPart in BodyPartHolder.GetComponentsInChildren<BodyPart2D>())
+    //        {
+    //            playerBodyParts.Add(BodyPart);
+    //        }
+    //}
 
     private void Start()
     {
-        foreach (var BodyPart in BodyPartHolder.GetComponentsInChildren<BodyPart>())
+        foreach (var BodyPart in BodyPartHolder.GetComponentsInChildren<BodyPart2D>())
             playerBodyParts.Add(BodyPart);
 
         Instance = this;
@@ -28,37 +28,56 @@ public class PlayerVisualScript : MonoBehaviour
 
     public void SetItemVisual(EquipableItem item)
     {
-        foreach (var bodyPart in playerBodyParts)
+        var MainBodyPart = playerBodyParts.Find(bp => bp.Properties.Type == item.BodyPartType);
+        if (MainBodyPart != null)
+            MainBodyPart.setModel(item.Model);
+        if (item.ChainedItems == null || item.ChainedItems.Count == 0)
+            return;
+        foreach (var chainedItem in item.ChainedItems)
         {
-            if (bodyPart.Properties.Type == item.Properties.Type)
-            {
-                bodyPart.CurrentModel = Instantiate(item.Model,bodyPart.transform);
-                bodyPart.CurrentModel.transform.position = bodyPart.defaultModel.transform.position;
-                bodyPart.defaultModel.SetActive(false);
-                return;
-            }
+            var BodyPart = playerBodyParts.Find(bp => bp.Properties.Type == chainedItem.BodyPartType);
+            if (BodyPart != null)
+                BodyPart.setModel(chainedItem.Model);
         }
+        //foreach (var bodyPart in playerBodyParts)
+        //{
+        //    if (bodyPart.Properties.Type == item.BodyPartType)
+        //    {
+        //        bodyPart.setModel(item.Model);
+        //        return;
+        //    }
+        //}
     }
 
     public void RemoveItemVisual(EquipableItem item)
     {
-        foreach (var bodyPart in playerBodyParts)
+        var MainBodyPart = playerBodyParts.Find(bp => bp.Properties.Type == item.BodyPartType);
+        if (MainBodyPart != null)
+            MainBodyPart.ResetModel();
+        if (item.ChainedItems == null || item.ChainedItems.Count == 0)
+            return;
+        foreach (var chainedItem in item.ChainedItems)
         {
-            if (bodyPart.Properties.Type == item.Properties.Type)
-            {
-                Destroy(bodyPart.CurrentModel);
-                bodyPart.defaultModel.SetActive(true);
-            }
+            var BodyPart = playerBodyParts.Find(bp => bp.Properties.Type == chainedItem.BodyPartType);
+            if (BodyPart != null)
+                BodyPart.ResetModel();
         }
+        //foreach (var bodyPart in playerBodyParts)
+        //{
+        //    if (bodyPart.Properties.Type == item.BodyPartType)
+        //    {
+        //        bodyPart.ResetModel();
+        //    }
+        //}
     }
 
-    public bool HaveItem(EquipableItem item)
-    {
-        foreach (var bodyPart in playerBodyParts)
-            if (bodyPart.Properties.Type == item.Properties.Type &&
-                bodyPart.CurrentModel == item.Model)
-                return true;
+    //public bool HaveItem(EquipableItem item)
+    //{
+    //    foreach (var bodyPart in playerBodyParts)
+    //        if (bodyPart.Properties.Type == item.Properties.Type &&
+    //            bodyPart.CurrentModel == item.Model)
+    //            return true;
 
-        return false;
-    }
+    //    return false;
+    //}
 }
