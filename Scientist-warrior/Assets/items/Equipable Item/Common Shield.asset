@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Common Shield
   m_EditorClassIdentifier: 
-  id: 33038
+  id: 49264
   ItemName: Common Shield
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 30963ea85de0e95438136e1cc9241bcb, type: 3}
@@ -24,8 +24,6 @@ MonoBehaviour:
     isInt: 0
     amount: 8
   EquipmentType: 2
-  Properties:
-    Name: 
-    Id: 0
-    Type: 14
-  Model: {fileID: 5292568056801544144, guid: a3c136b5b23c4df43958a1a32ada4d98, type: 3}
+  BodyPartType: 20
+  Model: {fileID: 21300000, guid: 759e2cf71b461654b92215db0deb2f33, type: 3}
+  ChainedItems: []

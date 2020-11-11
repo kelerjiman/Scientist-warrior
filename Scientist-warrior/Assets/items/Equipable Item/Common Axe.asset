@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29b75bfd0a0129649acf075832dd6065, type: 3}
-  m_Name: Golde Sword
+  m_Name: Common Axe
   m_EditorClassIdentifier: 
-  id: 22243
+  id: 36676
   ItemName: 
   MaxStack: 1
-  Icon: {fileID: 21300000, guid: 4afcf3afa0ae0bc4d90766ec95ffbd4b, type: 3}
+  Icon: {fileID: 21300000, guid: 57e7d836ef19d6745aa5eeae3dd5488e, type: 3}
   BuyPrice: 2
   SellPrice: 1
   state:
   - name: 
     type: 0
     isInt: 0
-    amount: 8
+    amount: 5
   EquipmentType: 4
   BodyPartType: 22
-  Model: {fileID: 21300000, guid: 89a62b48a97e2974ca48d355faac22f6, type: 3}
+  Model: {fileID: 21300000, guid: 56b72dfc49ae5124897e79af6917738c, type: 3}
   ChainedItems: []
   projectile: {fileID: 0}
-  attackType: 3
+  attackType: 6

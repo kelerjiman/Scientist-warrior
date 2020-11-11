@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11633c80f60d9408e907a3c53fe941, type: 3}
   m_Name: Golden Chest
   m_EditorClassIdentifier: 
-  id: 27363
+  id: 55288
   ItemName: Golden Chest
   MaxStack: 1
   Icon: {fileID: 21300000, guid: fd83e9de39b2db4419f6548b9b95008c, type: 3}
@@ -24,8 +24,24 @@ MonoBehaviour:
     isInt: 0
     amount: 10
   EquipmentType: 1
-  Properties:
-    Name: 
-    Id: 0
-    Type: 8
-  Model: {fileID: 748892064072856285, guid: bd6178cbb8a897f409a93e6aa3bc03a5, type: 3}
+  BodyPartType: 10
+  Model: {fileID: 21300000, guid: ff730521b8435824ebbe459706ef221c, type: 3}
+  ChainedItems:
+  - Name: Shoulder R
+    BodyPartType: 12
+    Model: {fileID: 21300002, guid: f1390290e24f07b45ae122ac874fa85c, type: 3}
+  - Name: Shoulder L
+    BodyPartType: 13
+    Model: {fileID: 21300004, guid: f1390290e24f07b45ae122ac874fa85c, type: 3}
+  - Name: Forearm R
+    BodyPartType: 14
+    Model: {fileID: 21300008, guid: 54f4400a30082ae4d8c874522d82c97b, type: 3}
+  - Name: Forearm L
+    BodyPartType: 15
+    Model: {fileID: 21300010, guid: 54f4400a30082ae4d8c874522d82c97b, type: 3}
+  - Name: Hand R
+    BodyPartType: 16
+    Model: {fileID: 21300036, guid: 6757171113a8f4f4391ed73b961a34ce, type: 3}
+  - Name: Hand L
+    BodyPartType: 17
+    Model: {fileID: 21300016, guid: 1f5cb7d123288cd47bdfb44022f9509c, type: 3}

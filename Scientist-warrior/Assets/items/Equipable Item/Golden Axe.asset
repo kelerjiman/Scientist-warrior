@@ -24,10 +24,8 @@ MonoBehaviour:
     isInt: 0
     amount: 0
   EquipmentType: 4
-  Properties:
-    Name: 
-    Id: 0
-    Type: 15
-  Model: {fileID: 9018434352457198942, guid: 2b1ed7bac72515746b312741f393e69d, type: 3}
+  BodyPartType: 22
+  Model: {fileID: 21300000, guid: a34af9608d4ec644bad3c4e6288dd015, type: 3}
+  ChainedItems: []
   projectile: {fileID: 0}
-  attackType: 2
+  attackType: 6
