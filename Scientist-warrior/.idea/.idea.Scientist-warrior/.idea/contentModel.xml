@@ -130,6 +130,7 @@
         <e p="Health.cs" t="Include" />
         <e p="InputButton.cs" t="Include" />
         <e p="ItemDestroyPanel.cs" t="Include" />
+        <e p="Mount.cs" t="Include" />
         <e p="MovementScript.cs" t="Include" />
         <e p="ParicalScript.cs" t="Include" />
         <e p="PlayerAnimation.cs" t="Include" />
@@ -208,6 +209,12 @@
             <e p="ShopUiTab.cs" t="Include" />
             <e p="TabButton.cs" t="Include" />
           </e>
+          <e p="SpawnSystem" t="Include">
+            <e p="Spawner.cs" t="Include" />
+            <e p="SpawnerArea.cs" t="Include" />
+            <e p="SpawnerManager.cs" t="Include" />
+          </e>
+          <e p="Weapon.cs" t="Include" />
         </e>
         <e p="SliderScript.cs" t="Include" />
         <e p="SpriteResorter.cs" t="Include" />
