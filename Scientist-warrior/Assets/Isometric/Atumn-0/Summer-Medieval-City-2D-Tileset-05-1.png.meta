@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: 20899c5deaa02bb48a29ac9dd3f8a449
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6679441298497216973
+    second: Summer-Medieval-City-2D-Tileset-05-1_0
+  - first:
+      213: -936811777398089828
+    second: Summer-Medieval-City-2D-Tileset-05-1_1
+  - first:
+      213: 5230581925830674365
+    second: Summer-Medieval-City-2D-Tileset-05-1_2
+  - first:
+      213: -8839794287165810904
+    second: Summer-Medieval-City-2D-Tileset-05-1_3
+  - first:
+      213: 6207568236823824160
+    second: Summer-Medieval-City-2D-Tileset-05-1_4
+  - first:
+      213: -8178886709798561922
+    second: Summer-Medieval-City-2D-Tileset-05-1_5
+  - first:
+      213: 2141180119324465240
+    second: Summer-Medieval-City-2D-Tileset-05-1_6
+  - first:
+      213: -3077300254214345955
+    second: Summer-Medieval-City-2D-Tileset-05-1_7
+  - first:
+      213: 5279299851271809373
+    second: Summer-Medieval-City-2D-Tileset-05-1_8
+  - first:
+      213: 6445672043836398980
+    second: Summer-Medieval-City-2D-Tileset-05-1_9
+  - first:
+      213: 8684299036202316496
+    second: Summer-Medieval-City-2D-Tileset-05-1_10
+  - first:
+      213: 6221276493329299202
+    second: Summer-Medieval-City-2D-Tileset-05-1_11
+  - first:
+      213: 6287036734018570809
+    second: Summer-Medieval-City-2D-Tileset-05-1_12
+  - first:
+      213: -1336529111712350004
+    second: Summer-Medieval-City-2D-Tileset-05-1_13
+  - first:
+      213: 7326748225962023596
+    second: Summer-Medieval-City-2D-Tileset-05-1_14
+  - first:
+      213: 8542718425609357269
+    second: Summer-Medieval-City-2D-Tileset-05-1_15
+  - first:
+      213: 3118533648101523141
+    second: Summer-Medieval-City-2D-Tileset-05-1_16
+  - first:
+      213: 8338890287566201214
+    second: Summer-Medieval-City-2D-Tileset-05-1_17
+  - first:
+      213: -2351559128878585908
+    second: Summer-Medieval-City-2D-Tileset-05-1_18
+  - first:
+      213: 6626068208352244549
+    second: Summer-Medieval-City-2D-Tileset-05-1_19
+  - first:
+      213: 6087988045034725171
+    second: Summer-Medieval-City-2D-Tileset-05-1_20
+  - first:
+      213: 4320185624422719461
+    second: Summer-Medieval-City-2D-Tileset-05-1_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc12007c87422bc50800000000000000
+      internalID: 6679441298497216973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97d8c2e6a6cff2f0800000000000000
+      internalID: -936811777398089828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db747b97c82c69840800000000000000
+      internalID: 5230581925830674365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 86
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ba55819bb3b45d0800000000000000
+      internalID: -3077300254214345955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_8
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 86
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5924d96e37d34940800000000000000
+      internalID: 5279299851271809373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_9
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 86
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dd88fb290a37950800000000000000
+      internalID: 6445672043836398980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 122
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d23b1846f3d48870800000000000000
+      internalID: 8684299036202316496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_11
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 122
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207716a420a665650800000000000000
+      internalID: 6221276493329299202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_12
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a4205799a004750800000000000000
+      internalID: 6287036734018570809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 129
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0ca68aad1b37de0800000000000000
+      internalID: -1336529111712350004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa903751b6dda560800000000000000
+      internalID: 7326748225962023596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_15
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 11
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d741a69525dd8670800000000000000
+      internalID: 8542718425609357269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_16
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 11
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ceb13b84d1474b20800000000000000
+      internalID: 3118533648101523141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_17
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 58
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71a6530980b9b370800000000000000
+      internalID: 8338890287566201214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_18
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 58
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc76dde6e659d5fd0800000000000000
+      internalID: -2351559128878585908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_19
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 54
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5433858dde584fb50800000000000000
+      internalID: 6626068208352244549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_20
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 54
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f9e151fd0ec7450800000000000000
+      internalID: 6087988045034725171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 63
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82754f95eedb25580800000000000000
+      internalID: -8839794287165810904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 112
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027c1ea1c66b52650800000000000000
+      internalID: 6207568236823824160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 82
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e771b4cfed1ce7e80800000000000000
+      internalID: -8178886709798561922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 98
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858967c59fff6bd10800000000000000
+      internalID: 2141180119324465240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Summer-Medieval-City-2D-Tileset-05-1_21
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 84
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef1773afe164fb30800000000000000
+      internalID: 4320185624422719461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

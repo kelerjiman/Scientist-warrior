@@ -1,0 +1,920 @@
+fileFormatVersion: 2
+guid: e402e46ead1d68244bba2f86a683aa07
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6698747250665367562
+    second: Autumn-Medieval-City-2D-Obstucles_0
+  - first:
+      213: -5875094178018027428
+    second: Autumn-Medieval-City-2D-Obstucles_1
+  - first:
+      213: 6184003802082731326
+    second: Autumn-Medieval-City-2D-Obstucles_2
+  - first:
+      213: -6822327698166735285
+    second: Autumn-Medieval-City-2D-Obstucles_3
+  - first:
+      213: -1552693291721418783
+    second: Autumn-Medieval-City-2D-Obstucles_4
+  - first:
+      213: 157202984611518734
+    second: Autumn-Medieval-City-2D-Obstucles_5
+  - first:
+      213: -4317278410435175384
+    second: Autumn-Medieval-City-2D-Obstucles_6
+  - first:
+      213: 8961288995992253500
+    second: Autumn-Medieval-City-2D-Obstucles_7
+  - first:
+      213: -1559743456793215428
+    second: Autumn-Medieval-City-2D-Obstucles_8
+  - first:
+      213: -8822145910773077457
+    second: Autumn-Medieval-City-2D-Obstucles_9
+  - first:
+      213: 8939291594162174005
+    second: Autumn-Medieval-City-2D-Obstucles_10
+  - first:
+      213: 8776904121310813905
+    second: Autumn-Flower-1
+  - first:
+      213: 2851782660942941630
+    second: Autumn-Flower-0
+  - first:
+      213: 1828037865663370187
+    second: Autumn-Medieval-City-2D-Obstucles_13
+  - first:
+      213: -2126801363473775242
+    second: Autumn-Medieval-City-2D-Obstucles_14
+  - first:
+      213: 8569799482607763826
+    second: Autumn-Medieval-City-2D-Obstucles_15
+  - first:
+      213: -5390299237452105692
+    second: Autumn-Medieval-City-2D-Obstucles_16
+  - first:
+      213: 9160690520363711416
+    second: Autumn-Medieval-City-2D-Obstucles_17
+  - first:
+      213: -4626031553186670374
+    second: Autumn-Medieval-City-2D-Obstucles_18
+  - first:
+      213: -1011478032935988189
+    second: Autumn-Medieval-City-2D-Obstucles_19
+  - first:
+      213: 3172810206048530600
+    second: Autumn-Medieval-City-2D-Obstucles_20
+  - first:
+      213: 2203617272609666641
+    second: Autumn-Medieval-City-2D-Obstucles_21
+  - first:
+      213: 6136739292004393116
+    second: Autumn-Medieval-City-2D-Obstucles_22
+  - first:
+      213: 8258195107151027115
+    second: Autumn-Medieval-City-2D-Obstucles_23
+  - first:
+      213: 5795600239722685477
+    second: Autumn-Medieval-City-2D-Obstucles_24
+  - first:
+      213: 335945251549183618
+    second: Autumn-Medieval-City-2D-Obstucles_25
+  - first:
+      213: 8001449400569468048
+    second: Autumn-Medieval-City-2D-Obstucles_26
+  - first:
+      213: -9028083771848891560
+    second: Autumn-Medieval-City-2D-Obstucles_27
+  - first:
+      213: 1995366501879848859
+    second: Autumn-Medieval-City-2D-Obstucles_28
+  - first:
+      213: -958477170976733534
+    second: Autumn-Tree-0
+  - first:
+      213: -5407809570681560464
+    second: Autumn-Medieval-City-2D-Obstucles_30
+  - first:
+      213: 5271139813845670112
+    second: Autumn-Medieval-City-2D-Obstucles_31
+  - first:
+      213: -7567571466286793256
+    second: Autumn-Tree-1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 816
+        width: 99
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08a80c022bb6fc50800000000000000
+      internalID: 6698747250665367562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 816
+        width: 82
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58154109f8777ea0800000000000000
+      internalID: -5875094178018027428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 812
+        width: 65
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e356ec891bef1d550800000000000000
+      internalID: 6184003802082731326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_3
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 813
+        width: 66
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e9671da193251a0800000000000000
+      internalID: -6822327698166735285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_4
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 816
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e710dd7da9b37ae0800000000000000
+      internalID: -1552693291721418783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_5
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 815
+        width: 73
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e099667184f7e2200800000000000000
+      internalID: 157202984611518734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 814
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c5c8dd822f514c0800000000000000
+      internalID: -4317278410435175384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_7
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 816
+        width: 149
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c343cb7ecd4ec5c70800000000000000
+      internalID: 8961288995992253500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_8
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 812
+        width: 80
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eb915079daa5ae0800000000000000
+      internalID: -1559743456793215428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_9
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 808
+        width: 72
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2aa4bf2901719580800000000000000
+      internalID: -8822145910773077457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_10
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 812
+        width: 56
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538fbada75ebe0c70800000000000000
+      internalID: 8939291594162174005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Flower-1
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 808
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de946adbc3ddc970800000000000000
+      internalID: 8776904121310813905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Flower-0
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 808
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd4f128831939720800000000000000
+      internalID: 2851782660942941630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_13
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 809
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc314d2e0ce7e5910800000000000000
+      internalID: 1828037865663370187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 625
+        width: 130
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675445e9d651c72e0800000000000000
+      internalID: -2126801363473775242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_15
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 611
+        width: 100
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2718925893b0ee670800000000000000
+      internalID: 8569799482607763826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_16
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 618
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428bb9e076fc135b0800000000000000
+      internalID: -5390299237452105692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_17
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 620
+        width: 147
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb319b2e7f412f70800000000000000
+      internalID: 9160690520363711416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_18
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 616
+        width: 48
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad85f88efc80dcfb0800000000000000
+      internalID: -4626031553186670374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_19
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 614
+        width: 53
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3245dbc861286f1f0800000000000000
+      internalID: -1011478032935988189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_20
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 613
+        width: 77
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0b1477216180c20800000000000000
+      internalID: 3172810206048530600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 615
+        width: 49
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15670d2fb32d49e10800000000000000
+      internalID: 2203617272609666641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_22
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 618
+        width: 263
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90aa1b4fd31a2550800000000000000
+      internalID: 6136739292004393116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_23
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 407
+        width: 111
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab1b9732b00b9270800000000000000
+      internalID: 8258195107151027115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_24
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 415
+        width: 141
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524e6dc26bb1e6050800000000000000
+      internalID: 5795600239722685477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_25
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 403
+        width: 155
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e71962d6489a400800000000000000
+      internalID: 335945251549183618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_26
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 399
+        width: 114
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094943916dbda0f60800000000000000
+      internalID: 8001449400569468048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_27
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 403
+        width: 159
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8536a7074adc5b280800000000000000
+      internalID: -9028083771848891560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_28
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 404
+        width: 156
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f1345f247f0bb10800000000000000
+      internalID: 1995366501879848859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Tree-0
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 66
+        width: 209
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a64c9a571ec2b2f0800000000000000
+      internalID: -958477170976733534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_30
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 73
+        width: 188
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0726196e8d993f4b0800000000000000
+      internalID: -5407809570681560464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Medieval-City-2D-Obstucles_31
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 69
+        width: 145
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e890b5abb9d62940800000000000000
+      internalID: 5271139813845670112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Autumn-Tree-1
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 63
+        width: 167
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddf79b98d59af690800000000000000
+      internalID: -7567571466286793256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
