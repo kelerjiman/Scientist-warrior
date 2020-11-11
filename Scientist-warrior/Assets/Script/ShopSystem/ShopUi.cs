@@ -17,10 +17,9 @@ namespace Script.ShopSystem
 
         [SerializeField] private ShopItemSlot shopItemSlot;
 
-//        [SerializeField] private RectTransform itemSlotPlaceHolder;
+        //        [SerializeField] private RectTransform itemSlotPlaceHolder;
         [SerializeField] private List<TabButton> tabButtons;
         [SerializeField] private CanvasRenderer BuyTab, SellTab;
-        private InWorldShop m_LastShop;
         private InventoryManager m_InventoryManager;
         private CurrencyManager m_CurrencyManager;
 
@@ -33,7 +32,7 @@ namespace Script.ShopSystem
                 tabButton.buttonTypeOnclickEvent += TabButtonEvent;
             }
 
-            SetData(items, null);
+            SetData(items);
             TabButtonEvent(ButtonType.Buy);
         }
 
@@ -51,7 +50,7 @@ namespace Script.ShopSystem
 
         private void TabButtonEvent(ButtonType type)
         {
-//            Debug.Log("TabButton On ShopUi");
+            //            Debug.Log("TabButton On ShopUi");
             if (type == ButtonType.Buy)
             {
                 Buy = true;
@@ -99,24 +98,23 @@ namespace Script.ShopSystem
             m_SellItems.Clear();
         }
 
-        public void SetData(List<ShopItem> shopItems, InWorldShop lastShop)
+        public void SetData(List<ShopItem> shopItems = null)
         {
-            if (lastShop != null && lastShop == m_LastShop)
-                return;
-            m_LastShop = lastShop;
             items = shopItems;
             foreach (var itemSlot in shopItemSlots)
             {
-                Destroy(itemSlot.gameObject);
+                if (itemSlot != null)
+                    Destroy(itemSlot.gameObject);
             }
-
-            foreach (var item in items)
-            {
-                var x = Instantiate(shopItemSlot, BuyTab.transform);
-                x.SetData(item);
-                x.PurchasingEvent += OnPurchasingEvent;
-                shopItemSlots.Add(x);
-            }
+            shopItemSlots.Clear();
+            if (items != null)
+                foreach (var item in items)
+                {
+                    var x = Instantiate(shopItemSlot, BuyTab.transform);
+                    x.SetData(item);
+                    x.PurchasingEvent += OnPurchasingEvent;
+                    shopItemSlots.Add(x);
+                }
         }
 
         private void OnPurchasingEvent(ShopItemSlot itemSlot)
@@ -125,12 +123,15 @@ namespace Script.ShopSystem
             {
                 if (!InventoryManager.Instance.inventory.IsFull())
                 {
-                    for (int i = 0; i < itemSlot.ShopItem.Amount; i++)
-                    {
-                        InventoryManager.Instance.inventory.AddItem(itemSlot.ShopItem.item.GetCopy());
-                    }
-
-                    CurrencyManager.Instance.AddGold(-itemSlot.ShopItem.item.BuyPrice * itemSlot.ShopItem.Amount);
+                    InventoryManager.Instance.inventory.AddItem
+                        (
+                        itemSlot.ShopItem.item.GetCopy(),
+                        itemSlot.ShopItem.Amount
+                        );
+                    CurrencyManager.Instance.AddGold
+                        (
+                        -itemSlot.ShopItem.item.BuyPrice * itemSlot.ShopItem.Amount
+                        );
                     Destroy(itemSlot.gameObject);
                 }
             }
@@ -142,16 +143,17 @@ namespace Script.ShopSystem
             float g = itemSlot.ShopItem.item.BuyPrice * itemSlot.ShopItem.Amount * 30 / 100;
             if (g < 1)
                 g = 1;
-            if (CurrencyManager.Instance.CanPurchasing((int) g))
+            if (CurrencyManager.Instance.CanPurchasing((int)g))
             {
                 if (!InventoryManager.Instance.inventory.IsFull())
                 {
-                    for (int i = 0; i < itemSlot.ShopItem.Amount; i++)
-                    {
-                        InventoryManager.Instance.inventory.AddItem(itemSlot.ShopItem.item.GetCopy());
-                    }
+                    InventoryManager.Instance.inventory.AddItem
+                        (
+                        itemSlot.ShopItem.item.GetCopy(),
+                        itemSlot.ShopItem.Amount
+                        );
 
-                    CurrencyManager.Instance.AddGold((int) -g);
+                    CurrencyManager.Instance.AddGold((int)-g);
                     Destroy(itemSlot.gameObject);
                 }
             }

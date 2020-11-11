@@ -11,8 +11,8 @@ namespace Script.ShopSystem
         {
             if (other.CompareTag("Player"))
             {
-                ShopManager.Instance.m_ShopUi.SetData(m_ShopItems, this);
-                ShopManager.Instance.m_ShopUi.gameObject.SetActive(true);
+                ShopManager.Instance.m_ShopUi.SetData(m_ShopItems);
+                ShopManager.Instance.m_ShopUi.GetComponent<UIAnimation>().OpenPanel();
             }
         }
 
@@ -20,7 +20,9 @@ namespace Script.ShopSystem
         {
             if (other.CompareTag("Player"))
             {
-                ShopManager.Instance.m_ShopUi.gameObject.SetActive(false);
+
+                ShopManager.Instance.m_ShopUi.SetData(null);
+                ShopManager.Instance.m_ShopUi.GetComponent<UIAnimation>().ClosePanel();
             }
         }
     }
