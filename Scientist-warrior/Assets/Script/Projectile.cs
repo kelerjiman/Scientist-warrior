@@ -24,6 +24,7 @@ public class Projectile : MonoBehaviour
                 var coll = collision.gameObject.GetComponent<IINteractable>();
                 if (coll != null)
                     coll.GetDamage(damage);
+                Destroy(gameObject);
             }
 
         }
@@ -32,6 +33,7 @@ public class Projectile : MonoBehaviour
             var coll = collision.gameObject.GetComponent<IINteractable>();
             if (coll != null)
                 coll.GetDamage(damage);
+            Destroy(gameObject);
         }
         else
         {
@@ -40,10 +42,12 @@ public class Projectile : MonoBehaviour
                 var coll = collision.gameObject.GetComponent<IINteractable>();
                 if (coll != null)
                     coll.GetDamage(damage);
+                
             }
+            Destroy(gameObject);
         }
-
-        Destroy(gameObject);
+        Debug.Log(collision.name);
+        
 
     }
     enum ParentType
