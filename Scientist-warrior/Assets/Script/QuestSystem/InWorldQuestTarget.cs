@@ -2,14 +2,18 @@ using UnityEngine;
 
 namespace Script.QuestSystem
 {
-    public class InWorldQuestTarget: MonoBehaviour
+    public class InWorldQuestTarget : MonoBehaviour
     {
-        public QuestTarget QuestTarget;
-        public Quest quest;
-
-        private void Start()
+        [SerializeField] protected QuestTarget QuestTarget;
+        //public Quest quest;
+        public QuestTarget GetQuestTarget()
         {
-            QuestTarget.TargetId = Random.Range(0, 100000);
+            return QuestTarget;
         }
+
+        //private void Start()
+        //{
+        //    QuestTarget.TargetId = Random.Range(0, 100000);
+        //}
     }
 }
