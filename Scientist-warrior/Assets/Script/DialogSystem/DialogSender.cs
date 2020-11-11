@@ -30,8 +30,9 @@ namespace Script.DialogSystem
         {
             if (other.CompareTag("Player"))
             {
-                if (Quest != null && Quest.InWorldQuestTarget != null)
+                if (Quest != null)
                 {
+                    //TODO ghablan inja questInworld Null check shode bood
                     QuestManager.Instance.QuestUi.ToggleVisual(false);
                 }
                 DialogManager.Instance.dialogUi.GetData(null);
