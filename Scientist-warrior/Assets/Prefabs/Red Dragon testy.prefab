@@ -9,8 +9,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4674648414393337457, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
         type: 3}
+      propertyPath: DropItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674648414393337457, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
       propertyPath: QuestTarget.TargetId
       value: 5858
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674648414393337457, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: DropItems.Array.data[0].amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674648414393337457, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: DropItems.Array.data[0].item
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674648414393337457, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
+        type: 3}
+      propertyPath: Income.MainCoin
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 7972506249180190705, guid: 0a4d832485c4d9b4e9c1ea694902fe31,
         type: 3}
