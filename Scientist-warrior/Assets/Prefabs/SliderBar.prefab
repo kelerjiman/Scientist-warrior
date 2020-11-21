@@ -34,9 +34,9 @@ RectTransform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -131.17, y: 0}
-  m_SizeDelta: {x: -262.35077, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2439372042488291713
 CanvasRenderer:
@@ -238,9 +238,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 127.11, y: 0}
-  m_SizeDelta: {x: -254.22832, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7500416817740987066
 CanvasRenderer:
@@ -309,10 +309,10 @@ GameObject:
   - component: {fileID: 3292491272088417001}
   - component: {fileID: 8514259199222195685}
   - component: {fileID: 2410997786355343147}
-  - component: {fileID: 3372697597612233014}
   - component: {fileID: 5214515260516899418}
   - component: {fileID: 422468301805447243}
   - component: {fileID: 2678732952352224776}
+  - component: {fileID: 6008413170698786059}
   m_Layer: 0
   m_Name: SliderBar
   m_TagString: Untagged
@@ -381,21 +381,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 2.33
---- !u!114 &3372697597612233014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6887209209874088416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ef4c0da410cf34780e3b3bd72ce254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 6188517552045794380}
-  CurrentText: {fileID: 5969785765720362713}
-  MaxAmountText: {fileID: 1281903257581149785}
 --- !u!114 &5214515260516899418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,6 +439,21 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 0
+--- !u!114 &6008413170698786059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6887209209874088416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d3f8499797769458429a713915daf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 6188517552045794380}
+  CurrentText: {fileID: 1281903257581149785}
+  MaxAmountText: {fileID: 5969785765720362713}
 --- !u!1 &9037040546426810175
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,9 +488,9 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.059326, y: 0}
-  m_SizeDelta: {x: -483.43323, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1747716665600068780
 CanvasRenderer:
