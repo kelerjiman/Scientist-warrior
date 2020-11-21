@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8381754131098047764}
   - component: {fileID: 1142913302449141102}
-  - component: {fileID: 2477270714400948859}
   - component: {fileID: 2045836195157488649}
   - component: {fileID: 752150859467287831}
   - component: {fileID: 215612640523493671}
@@ -51,34 +50,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0f1c94b3fd03046a7231b345399350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemChestUI: {fileID: 0}
   inventory: {fileID: 0}
   equipmentPanel: {fileID: 0}
   craftingWindow: {fileID: 0}
   DragableItem: {fileID: 0}
   m_ItemDestroyPanel: {fileID: 0}
---- !u!114 &2477270714400948859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5431859486939175889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3136c4234692b4db949aee8e2ca238, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InventoryUI: {fileID: 0}
-  CraftingUI: {fileID: 0}
-  EquipmenPanelUI: {fileID: 0}
-  InventoryButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  EquipmentButton: {fileID: 0}
-  QuestListUiButton: {fileID: 0}
-  inventoryOpen: {x: 0, y: 0}
-  inventoryClose: {x: 800, y: 0}
+  inworldChest: {fileID: 402229279952407434, guid: bda57b3986fd2ee40aa38e07ceec8da8,
+    type: 3}
 --- !u!114 &2045836195157488649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestList: []
   QuestUi: {fileID: 0}
-  m_QuestListUi: {fileID: 0}
+  QuestListUi: {fileID: 0}
 --- !u!114 &752150859467287831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,9 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07dbb9e026b9bd3488d29b0ce1fb452f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gold: 0
-  gem: 0
-  experience: 1
+  levelText: {fileID: 0}
   level: 1
   nextLevelXp: 10
 --- !u!114 &215612640523493671
