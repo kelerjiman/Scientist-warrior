@@ -4034,11 +4034,10 @@ GameObject:
   - component: {fileID: 4701541098381077}
   - component: {fileID: 1977579745376180797}
   - component: {fileID: 3404958425011925358}
-  - component: {fileID: 5119933036542650275}
-  - component: {fileID: 5664113555319543526}
   - component: {fileID: 9027690218194256523}
-  - component: {fileID: 1813502694377549187}
   - component: {fileID: 7851687092414674502}
+  - component: {fileID: 6794178095862804482}
+  - component: {fileID: 5335267573613015613}
   m_Layer: 9
   m_Name: Character-ref
   m_TagString: Player
@@ -4109,56 +4108,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.308115, y: 0.28087664}
   m_EdgeRadius: 0
---- !u!114 &5119933036542650275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768184198583581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc63143b8c897064796dde7c202231f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  rigidbody2d: {fileID: 1977579745376180797}
-  MountPlaceHolder: {fileID: 4438923763497351}
-  DropShadow: {fileID: 1736758997030743}
---- !u!114 &5664113555319543526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768184198583581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 564edc6b56867ef4ca1538f671fb6db3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BodyPartHolder: {fileID: 4611858194086833}
-  playerBodyParts:
-  - {fileID: 1058101081}
-  - {fileID: 1202951939}
-  - {fileID: 1153192493}
-  - {fileID: 225171200}
-  - {fileID: 1939322787}
-  - {fileID: 2023035969}
-  - {fileID: 87923983}
-  - {fileID: 528353057}
-  - {fileID: 1703011594}
-  - {fileID: 13170627}
-  - {fileID: 309035528}
-  - {fileID: 1638983494}
-  - {fileID: 209695413}
-  - {fileID: 804643124}
-  - {fileID: 1533098177}
-  - {fileID: 1626036554}
-  - {fileID: 1547703936}
-  - {fileID: 924335589}
-  - {fileID: 2034671076}
-  - {fileID: 1705045249}
 --- !u!114 &9027690218194256523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4172,20 +4121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Avatar: {fileID: 0}
---- !u!114 &1813502694377549187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768184198583581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7f006cd60294e14a53d685b83a3a7a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 95771259353916603}
-  attackType: 3
 --- !u!114 &7851687092414674502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4211,9 +4146,39 @@ MonoBehaviour:
   healthSlider: {fileID: 0}
   energySlider: {fileID: 0}
   ProjectilePlaceHolder: {fileID: 4879206560195269}
-  Partical: {fileID: 2539406235948596143, guid: cbb09194d0e0d5544a2a3ddaa2d5dd00,
+  Partical: {fileID: 8678000925610702074, guid: cbb09194d0e0d5544a2a3ddaa2d5dd00,
     type: 3}
   playerVisual: {fileID: 1946988493398521}
+--- !u!114 &6794178095862804482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768184198583581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0658c324cee943e4486c1e373b681bc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackType: 3
+  AnimatorHolder: {fileID: 1946988493398521}
+--- !u!114 &5335267573613015613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768184198583581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db468610b777878458ec026273571900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rigidbody2d: {fileID: 1977579745376180797}
+  MountPlaceHolder: {fileID: 4438923763497351}
+  DropShadow: {fileID: 1736758997030743}
 --- !u!1 &1773241965499033
 GameObject:
   m_ObjectHideFlags: 0
@@ -5035,7 +5000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611858194086833}
   - component: {fileID: 95771259353916603}
-  - component: {fileID: 2149913666249239271}
+  - component: {fileID: 3036349195856123559}
   m_Layer: 9
   m_Name: Animation
   m_TagString: Player
@@ -5079,7 +5044,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2149913666249239271
+--- !u!114 &3036349195856123559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5088,10 +5053,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1946988493398521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 564edc6b56867ef4ca1538f671fb6db3, type: 3}
+  m_Script: {fileID: 11500000, guid: 46534d802e4dfd3478bfea3d75ae8cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BodyPartHolder: {fileID: 4611858194086833}
+  BodyPartHolder: {fileID: 4962141508199209}
   playerBodyParts:
   - {fileID: 1058101081}
   - {fileID: 1202951939}
@@ -5101,6 +5066,9 @@ MonoBehaviour:
   - {fileID: 2023035969}
   - {fileID: 87923983}
   - {fileID: 528353057}
+  - {fileID: 8625786641893125129}
+  - {fileID: 4533018180331987352}
+  - {fileID: 4504747840606952926}
   - {fileID: 1703011594}
   - {fileID: 13170627}
   - {fileID: 309035528}
@@ -5112,7 +5080,6 @@ MonoBehaviour:
   - {fileID: 1547703936}
   - {fileID: 924335589}
   - {fileID: 2034671076}
-  - {fileID: 1705045249}
 --- !u!1 &1947157877463077
 GameObject:
   m_ObjectHideFlags: 0
