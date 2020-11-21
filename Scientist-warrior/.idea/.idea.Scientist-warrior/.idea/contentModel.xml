@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Git-Hubs\Scientist-warrior\Scientist-warrior" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -109,7 +110,6 @@
             </e>
           </e>
         </e>
-        <e p="AnimationController.cs" t="Include" />
         <e p="Demigiant" t="Include">
           <e p="DOTween" t="Include">
             <e p="Modules" t="Include">
@@ -124,21 +124,43 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="EnemyAttackScript.cs" t="Include" />
-        <e p="EnemyZoneScript.cs" t="Include" />
-        <e p="EventManager.cs" t="Include" />
-        <e p="Health.cs" t="Include" />
-        <e p="InputButton.cs" t="Include" />
-        <e p="ItemDestroyPanel.cs" t="Include" />
-        <e p="Mount.cs" t="Include" />
-        <e p="MovementScript.cs" t="Include" />
-        <e p="ParicalScript.cs" t="Include" />
-        <e p="PlayerAnimation.cs" t="Include" />
-        <e p="PlayerAttackEffectArea.cs" t="Include" />
-        <e p="PlayerHealth.cs" t="Include" />
-        <e p="PlayerVisualScript.cs" t="Include" />
-        <e p="Script" t="Include">
-          <e p="BodyPart.cs" t="Include" />
+        <e p="FantasyHeroes" t="Include">
+          <e p="Editor" t="Include">
+            <e p="CopySpriteLayout.cs" t="Include" />
+            <e p="EditorGUIColorField.cs" t="Include" />
+            <e p="LayerManagerEditor.cs" t="Include" />
+            <e p="MeleeWeaponTrailEditor.cs" t="Include" />
+            <e p="SpriteCollectionEditor.cs" t="Include" />
+            <e p="SpriteImportSettings.cs" t="Include" />
+            <e p="UpdateUnitPrefabs.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="AnimationEvents.cs" t="Include" />
+            <e p="AnimationManager.cs" t="Include" />
+            <e p="Character.cs" t="Include" />
+            <e p="CharacterEditor.cs" t="Include" />
+            <e p="EditorGUIColorField.cs" t="Include" />
+            <e p="LayerManager.cs" t="Include" />
+            <e p="MeleeWeaponTrail.cs" t="Include" />
+            <e p="Palette.cs" t="Include" />
+            <e p="Screenshot.cs" t="Include" />
+            <e p="ScreenshotTransparent.cs" t="Include" />
+            <e p="SpriteCollection.cs" t="Include" />
+            <e p="SpriteCollectionRefresh.cs" t="Include" />
+            <e p="SpriteGroupEntry.cs" t="Include" />
+            <e p="SpriteSheetMaker.cs" t="Include" />
+            <e p="WeaponType.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="ColorizeEyes.shader" t="Include" />
+            <e p="Diffuse-Masked.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Popup.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="AnimationController.cs" t="Include" />
+          <e p="BodyPart2D.cs" t="Include" />
+          <e p="ButtonManager.cs" t="Include" />
           <e p="CharacterStatus" t="Include">
             <e p="CharacterState.cs" t="Include" />
             <e p="IStateUI.cs" t="Include" />
@@ -161,14 +183,21 @@
             <e p="CraftingRecipe.cs" t="Include" />
             <e p="CraftingRecipeUi.cs" t="Include" />
           </e>
+          <e p="Currency System" t="Include">
+            <e p="CurrencyManager.cs" t="Include" />
+            <e p="Income.cs" t="Include" />
+          </e>
           <e p="DialogSystem" t="Include">
             <e p="Dialog.cs" t="Include" />
             <e p="DialogManager.cs" t="Include" />
             <e p="DialogPlaceHolder.cs" t="Include" />
             <e p="DialogSender.cs" t="Include" />
-            <e p="DialogUI.cs" t="Include" />
+            <e p="DialogUi.cs" t="Include" />
             <e p="SenderBase.cs" t="Include" />
           </e>
+          <e p="DragScript.cs" t="Include" />
+          <e p="EnemyAttackScript.cs" t="Include" />
+          <e p="EnemyZoneScript.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="InventorySystem" t="Include">
             <e p="EquipableItem.cs" t="Include" />
@@ -182,7 +211,14 @@
             <e p="ItemSlot.cs" t="Include" />
             <e p="UseableItem.cs" t="Include" />
           </e>
+          <e p="ItemDestroyPanel.cs" t="Include" />
+          <e p="Mount.cs" t="Include" />
           <e p="MovementBase.cs" t="Include" />
+          <e p="MovementScript.cs" t="Include" />
+          <e p="ParicalScript.cs" t="Include" />
+          <e p="PlayerAnimation.cs" t="Include" />
+          <e p="PlayerAttackEffectArea.cs" t="Include" />
+          <e p="PlayerVisualScript.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="QuestSystem" t="Include">
             <e p="InWorldQuestTarget.cs" t="Include" />
@@ -195,11 +231,10 @@
             <e p="QuestManager.cs" t="Include" />
             <e p="QuestRewards.cs" t="Include" />
             <e p="QuestTarget.cs" t="Include" />
-            <e p="QuestUI.cs" t="Include" />
+            <e p="QuestUi.cs" t="Include" />
             <e p="Visitor.cs" t="Include" />
           </e>
           <e p="ShopSystem" t="Include">
-            <e p="CurrencyManager.cs" t="Include" />
             <e p="InWorldShop.cs" t="Include" />
             <e p="Price.cs" t="Include" />
             <e p="ShopItem.cs" t="Include" />
@@ -209,15 +244,16 @@
             <e p="ShopUiTab.cs" t="Include" />
             <e p="TabButton.cs" t="Include" />
           </e>
+          <e p="SliderScript.cs" t="Include" />
           <e p="SpawnSystem" t="Include">
             <e p="Spawner.cs" t="Include" />
             <e p="SpawnerArea.cs" t="Include" />
             <e p="SpawnerManager.cs" t="Include" />
           </e>
+          <e p="SpriteResorter.cs" t="Include" />
+          <e p="UIAnimation.cs" t="Include" />
           <e p="Weapon.cs" t="Include" />
         </e>
-        <e p="SliderScript.cs" t="Include" />
-        <e p="SpriteResorter.cs" t="Include" />
         <e p="Sprites" t="Include">
           <e p="animations.txt" t="Include" />
         </e>
@@ -243,13 +279,6 @@
           <e p="Editor" t="Include">
             <e p="CrossPlatformInput" t="Include">
               <e p="CrossPlatformInputInitialize.cs" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="Tasty_Characters - Castle Pack" t="Include">
-          <e p="Assets" t="Include">
-            <e p="textures" t="Include">
-              <e p="x.xml" t="Include" />
             </e>
           </e>
         </e>
@@ -281,20 +310,16 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="TileMapTest.cs" t="Include" />
       </e>
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
-      <e p="packages" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
       <e p="Scientist-warrior.sln" t="IncludeFlat" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="Unity.2D.Tilemap.Extras.csproj" t="IncludeRecursive" />
       <e p="Unity.2D.Tilemap.Extras.Editor.csproj" t="IncludeRecursive" />
       <e p="Unity.2D.Tilemap.Extras.Placeholder.EditorTests.csproj" t="IncludeRecursive" />
     </e>
-    <e p="C:\Users\kelerjiman\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\kelerjiman\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Scientist-warrior.-1679304795.00" t="ExcludeRecursive" />
+    <e p="C:\Users\kelerjiman\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\kelerjiman\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_Scientist-warrior.-1679304795.00" t="ExcludeRecursive" />
   </component>
 </project>
