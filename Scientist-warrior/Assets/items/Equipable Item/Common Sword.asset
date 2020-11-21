@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b75bfd0a0129649acf075832dd6065, type: 3}
   m_Name: Common Sword
   m_EditorClassIdentifier: 
-  id: 62644
+  id: 42367
   ItemName: 
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 72817b8e0e6fce94a917ea91ff5fdc96, type: 3}
@@ -23,9 +23,10 @@ MonoBehaviour:
     type: 0
     isInt: 0
     amount: 3
-  EquipmentType: 4
-  BodyPartType: 22
+  EquipmentType: 2
+  BodyPartType: 20
   Model: {fileID: 21300000, guid: 96fabc496af407641adbc7f7b90a3b53, type: 3}
   ChainedItems: []
+  weaponType: 1
   projectile: {fileID: 0}
   attackType: 3

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b75bfd0a0129649acf075832dd6065, type: 3}
   m_Name: GoldenAxe_2Blade
   m_EditorClassIdentifier: 
-  id: 5349
+  id: 9738
   ItemName: 
   MaxStack: 1
   Icon: {fileID: 21300000, guid: dad3dc83041e7264d894ebf0c5568082, type: 3}
@@ -31,5 +31,6 @@ MonoBehaviour:
   BodyPartType: 22
   Model: {fileID: 21300000, guid: 9fb2ee5dd9a7ef745a3b1cfb34d8feef, type: 3}
   ChainedItems: []
+  weaponType: 2
   projectile: {fileID: 0}
-  attackType: 6
+  attackType: 4

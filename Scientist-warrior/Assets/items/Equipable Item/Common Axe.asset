@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b75bfd0a0129649acf075832dd6065, type: 3}
   m_Name: Common Axe
   m_EditorClassIdentifier: 
-  id: 36676
+  id: 63361
   ItemName: 
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 57e7d836ef19d6745aa5eeae3dd5488e, type: 3}
@@ -23,9 +23,10 @@ MonoBehaviour:
     type: 0
     isInt: 0
     amount: 5
-  EquipmentType: 4
-  BodyPartType: 22
+  EquipmentType: 2
+  BodyPartType: 20
   Model: {fileID: 21300000, guid: 56b72dfc49ae5124897e79af6917738c, type: 3}
   ChainedItems: []
+  weaponType: 1
   projectile: {fileID: 0}
   attackType: 6

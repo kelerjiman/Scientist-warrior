@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b75bfd0a0129649acf075832dd6065, type: 3}
   m_Name: Golde Sword
   m_EditorClassIdentifier: 
-  id: 22243
+  id: 25412
   ItemName: 
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 4afcf3afa0ae0bc4d90766ec95ffbd4b, type: 3}
@@ -23,9 +23,10 @@ MonoBehaviour:
     type: 0
     isInt: 0
     amount: 8
-  EquipmentType: 4
-  BodyPartType: 22
+  EquipmentType: 2
+  BodyPartType: 20
   Model: {fileID: 21300000, guid: 89a62b48a97e2974ca48d355faac22f6, type: 3}
   ChainedItems: []
+  weaponType: 1
   projectile: {fileID: 0}
   attackType: 3

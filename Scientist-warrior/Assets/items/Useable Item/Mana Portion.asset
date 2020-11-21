@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8303e05febdc73642aecba51cf262e0c, type: 3}
   m_Name: Mana Portion
   m_EditorClassIdentifier: 
-  id: 12538
+  id: 61772
   ItemName: Mana Portion
   MaxStack: 10
-  Icon: {fileID: 21300000, guid: c5f562f1c91da468b9c01eaf24858791, type: 3}
+  Icon: {fileID: 21300000, guid: be8d72d44dbf9f84c8dbf282c3da5572, type: 3}
   BuyPrice: 2
   SellPrice: 1
   Type: 2
   useableAmount: 5
-  Energy: 1
+  Energy: 2
   Health: 0

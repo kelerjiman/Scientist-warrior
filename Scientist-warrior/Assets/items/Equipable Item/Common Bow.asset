@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b75bfd0a0129649acf075832dd6065, type: 3}
   m_Name: Common Bow
   m_EditorClassIdentifier: 
-  id: 16497
+  id: 9728
   ItemName: 
   MaxStack: 1
   Icon: {fileID: 21300000, guid: 20591402365c7fb4286397373bf7f20b, type: 3}
@@ -23,19 +23,20 @@ MonoBehaviour:
     type: 2
     isInt: 0
     amount: 2
-  EquipmentType: 6
+  EquipmentType: 2
   BodyPartType: 20
   Model: {fileID: 0}
   ChainedItems:
-  - Name: 
+  - Name: Raiser
     BodyPartType: 29
     Model: {fileID: 21300000, guid: 7809f70e0ca3903459a4377115d87570, type: 3}
-  - Name: 
+  - Name: Limb U
     BodyPartType: 30
     Model: {fileID: 21300002, guid: ac20bdcff12e2414eb764ddb9ec4225f, type: 3}
-  - Name: 
+  - Name: Limb L
     BodyPartType: 31
     Model: {fileID: 21300002, guid: ac20bdcff12e2414eb764ddb9ec4225f, type: 3}
+  weaponType: 3
   projectile: {fileID: 3603978413685262591, guid: 55ab1531b9d9d7c46963f4f1699f7639,
     type: 3}
   attackType: 5
