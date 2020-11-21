@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7972506249180190705}
   - component: {fileID: 7972506249180190704}
   - component: {fileID: 7972506249180190606}
-  - component: {fileID: 7972506249180190607}
   - component: {fileID: 7972506249180190604}
   m_Layer: 10
   m_Name: Visual
@@ -162,7 +161,7 @@ MonoBehaviour:
   attackArea: {fileID: 7972506249784363319}
   attackAreaRadius: 2.62
   damage: 1
-  healthSlider: {fileID: 8974305816361428820}
+  healthSlider: {fileID: 83091188102194025}
   energySlider: {fileID: 0}
   Partical: {fileID: 5306971146490502574, guid: cbb09194d0e0d5544a2a3ddaa2d5dd00,
     type: 3}
@@ -180,23 +179,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestTarget:
     TargetId: 0
---- !u!114 &7972506249180190607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7972506249180190708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61f918b87dc38a848ba49fa040902e78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 7972506249180190709}
-  part:
-  - {fileID: 7972506249180190706}
-  sortOrder: 00000000
-  layerType: 1
 --- !u!70 &7972506249180190604
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -321,13 +303,14 @@ MonoBehaviour:
   QuestTarget:
     TargetId: 5959
   spawner: {fileID: 0}
-  DropItems:
-  - item: {fileID: 11400000, guid: 85ef102c06193f94bac2a5f5b77331b3, type: 2}
-    amount: 1
+  DropItems: []
   chestInWorld: {fileID: 402229279952407434, guid: bda57b3986fd2ee40aa38e07ceec8da8,
     type: 3}
   IsDead: 0
   questId: -1
+  Income:
+    xp: 1
+    MainCoin: 300
 --- !u!1001 &7972506250909162243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -478,15 +461,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7972506250909162243}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8974305816361428820 stripped
+--- !u!114 &83091188102194025 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1310314010682621015, guid: 6f4e237174cb6ce46b8d0f6005a5f4a6,
+  m_CorrespondingSourceObject: {fileID: 8035330821458917482, guid: 6f4e237174cb6ce46b8d0f6005a5f4a6,
     type: 3}
   m_PrefabInstance: {fileID: 7972506250909162243}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ef4c0da410cf34780e3b3bd72ce254, type: 3}
+  m_Script: {fileID: 11500000, guid: 85d3f8499797769458429a713915daf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
